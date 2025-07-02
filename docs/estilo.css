@@ -69,3 +69,23 @@ section {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.06);
 }
+
+/* Botão de download — estilo unificado */
+.cv-download {
+  display: inline-block;
+  background-color: #00885a;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cv-download:hover {
+  background-color: #006946;
+}
+
+  background-color: #006946;
+}
+
