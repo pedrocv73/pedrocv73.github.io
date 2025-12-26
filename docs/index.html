@@ -30,3 +30,32 @@
     </div>
   </div>
 </section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll("#lang-switch button");
+  const ptBlocks = document.querySelectorAll(".pt");
+  const enBlocks = document.querySelectorAll(".en");
+
+  function setLang(lang) {
+    if (lang === "pt") {
+      ptBlocks.forEach(el => el.style.display = "block");
+      enBlocks.forEach(el => el.style.display = "none");
+    } else {
+      ptBlocks.forEach(el => el.style.display = "none");
+      enBlocks.forEach(el => el.style.display = "block");
+    }
+
+    buttons.forEach(btn => btn.classList.remove("active"));
+    document.querySelector(`#lang-switch button[data-lang="${lang}"]`).classList.add("active");
+  }
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => setLang(btn.dataset.lang));
+  });
+
+  // idioma inicial
+  setLang("pt");
+});
+</script>
+
