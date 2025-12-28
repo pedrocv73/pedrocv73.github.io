@@ -13,10 +13,10 @@ body {
   overflow-x: hidden;
 }
 
-/* HERO — IMAGEM COM TOPO VISÍVEL */
+/* HERO — IMAGEM COM MAIS ÁREA VISÍVEL */
 .hero {
   background-image: url('realpolitik.png');
-  background-size: cover;
+  background-size: 115%; /* mostra mais da imagem */
   background-position: top center;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -27,7 +27,7 @@ body {
 /* MENU SOBRE A IMAGEM — ajuste milimétrico */
 #main-menu {
   position: absolute;
-  top: 57vh; /* descido ligeiramente (antes 56vh) */
+  top: 57vh;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(17, 17, 17, 0.75);
@@ -59,7 +59,7 @@ body {
 /* COPYRIGHT — desce ligeiramente também */
 .site-footer {
   position: absolute;
-  top: 74vh; /* descido ligeiramente (antes 72vh) */
+  top: 74vh;
   left: 50%;
   transform: translateX(-50%);
   font-size: 0.9rem;
