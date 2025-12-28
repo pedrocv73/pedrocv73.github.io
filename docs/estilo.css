@@ -12,7 +12,7 @@ body {
   overflow-x: hidden;
 }
 
-/* HERO COM IMG REAL E ALTURA CONTROLADA */
+/* HERO COM IMG REAL E RECORTE ABAIXO DA DOBRA */
 .hero {
   position: relative;
   width: 100%;
@@ -23,8 +23,10 @@ body {
   width: 100%;
   height: auto;
   max-height: 75vh; /* imagem mais contida */
-  object-fit: contain; /* garante que nada é cortado */
+  object-fit: cover; /* foca no centro */
+  object-position: top center; /* traz rosto e frase embutida para cima */
   display: block;
+  clip-path: inset(0 0 20% 0); /* recorta parte inferior da imagem */
 }
 
 /* BOTÕES DE LÍNGUA */
@@ -54,7 +56,7 @@ body {
 /* MENU */
 #main-menu {
   position: absolute;
-  top: 57vh; /* mantém posição original */
+  top: 57vh;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(17, 17, 17, 0.75);
@@ -99,11 +101,11 @@ body {
 /* FRASE EDITORIAL — MAIOR E MAIS PRESENTE */
 .frase-editorial {
   position: absolute;
-  top: 82vh; /* sobe um pouco porque a imagem é menor */
+  top: 82vh;
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Merriweather', serif;
-  font-size: 2rem; /* maior */
+  font-size: 2rem;
   color: #e0d8c0;
   background-color: rgba(40, 30, 20, 0.6);
   padding: 1rem 2rem;
@@ -117,7 +119,7 @@ body {
 /* INTRODUÇÃO */
 #intro {
   max-width: 900px;
-  margin: 4rem auto;
+  margin: 6rem auto 4rem auto; /* mais respiro acima */
   padding: 0 2rem;
 }
 
