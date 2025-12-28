@@ -1,8 +1,9 @@
-<!-- TÍTULO NO TOPO -->
-<h1>
-  Crisis Cabinet<br>
-  <span>by Pedro Martins</span>
-</h1>
+<!-- HERO COM IMAGEM -->
+<header class="hero">
+  <div class="hero-text">
+    <h1>A REALPOLITIK NÃO SE ESCREVE EM COMUNICADOS.</h1>
+  </div>
+</header>
 
 <!-- MENU PRINCIPAL -->
 <nav id="main-menu">
@@ -15,126 +16,33 @@
   </ul>
 </nav>
 
+<!-- INTRODUÇÃO -->
 <section id="intro">
   <div class="intro-block">
 
     <!-- EIXOS EM LINHA -->
-    <div class="eixos-inline pt">
-      <p><strong>Eixos editoriais:</strong>
-        <a href="lisbon-files.html">Lisbon Files</a> —
-        <a href="linhas-de-fratura.html">Linhas de Fratura</a> —
-        <a href="facebook.html">Facebook</a> —
-        <a href="portfolio.html">Portfólio</a>
-      </p>
-    </div>
-
-    <div class="eixos-inline en">
-      <p><strong>Editorial axes:</strong>
-        <a href="lisbon-files.html">Lisbon Files</a> —
-        <a href="linhas-de-fratura.html">Linhas de Fratura</a> —
-        <a href="facebook.html">Facebook</a> —
-        <a href="portfolio.html">Portfolio</a>
-      </p>
-    </div>
+    <div class="eixos-inline pt">…</div>
+    <div class="eixos-inline en">…</div>
 
     <!-- BOTÕES DE LÍNGUA -->
-    <div id="lang-switch">
-      <button data-lang="pt" class="active">PT</button>
-      <button data-lang="en">EN</button>
-    </div>
+    <div id="lang-switch">…</div>
 
     <!-- DEFINIÇÃO -->
-    <p class="cc-definition pt">
-      Crisis Cabinet é o meu núcleo estratégico — o espaço onde articulo método, análise e projetos editoriais.<br>
-      É o lugar onde interpreto tensões, forças e padrões que moldam a História e o presente.<br>
-      Em suma, é o meu eixo de interpretação, onde História, realpolitik e a análise contemporânea convergem num mesmo quadro estratégico.
-    </p>
-
-    <p class="cc-definition en">
-      Crisis Cabinet is my strategic core — the space where I bring together method, analysis, and editorial projects.<br>
-      It is also where I interpret the tensions, forces, and patterns that shape History and the present.<br>
-      Ultimately, it is my interpretative axis, where History, realpolitik, and contemporary analysis converge into a single strategic framework.
-    </p>
+    <p class="cc-definition pt">…</p>
+    <p class="cc-definition en">…</p>
 
     <!-- APRESENTAÇÃO -->
-    <div class="intro-text pt">
-      <h2>Apresentação</h2>
-      <p><strong>Leio sistemas — históricos, políticos e sociais — como estruturas em tensão.</strong><br>
-      Marx descreve a História como um processo contínuo e previsível; para mim, pelo contrário, a História é um conjunto de sistemas onde forças políticas e sociais se confrontam, acumulam e, por vezes, colapsam.</p>
+    <div class="intro-text pt">…</div>
+    <div class="intro-text en">…</div>
 
-      <p>O meu trabalho parte dessa lógica: compreender forças, identificar padrões, antecipar fraturas e transformar complexidade em leitura estratégica.</p>
-
-      <p>Este espaço é o meu centro de pensamento: artigos, análises e projetos editoriais que articulam história, realpolitik e interpretação contemporânea.<br>
-      Aqui vive também a ligação ao meu trabalho público — LinkedIn e <em>Linhas de Fratura</em> — e aos projetos temáticos como o <em>Lisbon Files</em>.</p>
-    </div>
-
-    <div class="intro-text en">
-      <h2>Presentation</h2>
-      <p><strong>I read systems — historical, political, and social — as structures under tension.</strong><br>
-      Marx described History as a continuous and predictable process; for me, however, History is a constellation of systems where political and social forces confront each other, accumulate, and at times collapse.</p>
-
-      <p>My work follows that logic: understanding forces, identifying patterns, anticipating fracture points, and turning complexity into strategic insight.</p>
-
-      <p>This space is my strategic hub: articles, analysis, and editorial projects that connect history, realpolitik, and contemporary interpretation.<br>
-      It also anchors my public work — LinkedIn and <em>Linhas de Fratura</em> — as well as thematic projects such as <em>Lisbon Files</em>.</p>
-    </div>
-
-    <!-- CONTACTOS INSTITUCIONAIS -->
-    <div class="contactos pt">
-      <p><strong>Presença pública:</strong>
-        <a href="https://www.linkedin.com/in/pedrojo%C3%A3omartins/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
-        <a href="https://web.facebook.com/PedroPMartins73" target="_blank" rel="noopener noreferrer">Facebook</a>
-      </p>
-    </div>
-
-    <div class="contactos en">
-      <p><strong>Public presence:</strong>
-        <a href="https://www.linkedin.com/in/pedrojo%C3%A3omartins/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
-        <a href="https://web.facebook.com/PedroPMartins73" target="_blank" rel="noopener noreferrer">Facebook</a>
-      </p>
-    </div>
+    <!-- CONTACTOS -->
+    <div class="contactos pt">…</div>
+    <div class="contactos en">…</div>
 
   </div>
 </section>
 
-<!-- SCRIPT DE LÍNGUA -->
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const buttons = document.querySelectorAll("#lang-switch button");
-  const ptBlocks = document.querySelectorAll(".pt");
-  const enBlocks = document.querySelectorAll(".en");
-
-  function setLang(lang) {
-    if (lang === "pt") {
-      ptBlocks.forEach(el => el.style.display = "block");
-      enBlocks.forEach(el => el.style.display = "none");
-    } else {
-      ptBlocks.forEach(el => el.style.display = "none");
-      enBlocks.forEach(el => el.style.display = "block");
-    }
-
-    buttons.forEach(btn => btn.classList.remove("active"));
-    document.querySelector(`#lang-switch button[data-lang="${lang}"]`).classList.add("active");
-  }
-
-  buttons.forEach(btn => {
-    btn.addEventListener("click", () => setLang(btn.dataset.lang));
-  });
-
-  setLang("pt");
-});
-</script>
-
-<!-- BOX INSTITUCIONAL NO FIM DA PÁGINA -->
-<div class="institucional-box">
-
-  <h1>
-    Crisis Cabinet<br>
-    <span>by Pedro Martins</span>
-  </h1>
-
-  <footer>
-    <p>&copy; 2026 Pedro Martins. Todos os direitos reservados.</p>
-  </footer>
-
-</div>
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p>&copy; 2026 Pedro Martins. Todos os direitos reservados.</p>
+</footer>
