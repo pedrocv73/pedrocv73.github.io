@@ -1,22 +1,96 @@
+/* HERO — estrutura estável */
 .hero {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;      /* ocupa sempre o ecrã inteiro */
   overflow: hidden;
 }
 
+/* IMAGEM HERO — cobre o ecrã sem falhar */
 .hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
-  max-height: 100vh;
-  object-fit: cover;
-  object-position: top center;
-  display: block;
+  height: 100%;        /* ocupa o hero inteiro */
+  object-fit: cover;   /* preenche sem distorcer */
+  object-position: top center; /* foca no rosto + frase embutida */
+  z-index: 1;
 }
 
+/* BOTÕES DE LÍNGUA */
+#lang-switch {
+  position: absolute;
+  top: 5vh;
+  right: 2vw;
+  z-index: 10;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lang-btn {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #333;
+  background: #fff;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
+  transition: background 0.3s ease;
+}
+
+.lang-btn:hover {
+  background: #f0f0f0;
+}
+
+/* MENU */
+#main-menu {
+  position: absolute;
+  top: 57vh;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(17, 17, 17, 0.75);
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+  z-index: 5;
+}
+
+#main-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+#main-menu a {
+  color: #d0d4dc;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.95rem;
+}
+
+#main-menu a:hover {
+  color: #ffffff;
+}
+
+/* COPYRIGHT */
+.site-footer {
+  position: absolute;
+  top: 74vh;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.9rem;
+  color: #ccc;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+  z-index: 4;
+}
+
+/* FRASE EDITORIAL */
 .frase-editorial {
   position: absolute;
-  top: 78vh; /* sobe ligeiramente */
+  top: 82vh;
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Merriweather', serif;
@@ -29,4 +103,17 @@
   z-index: 3;
   text-align: center;
   max-width: 90vw;
+}
+
+/* INTRODUÇÃO */
+#intro {
+  max-width: 900px;
+  margin: 6rem auto 4rem auto;
+  padding: 0 2rem;
+}
+
+.intro-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
