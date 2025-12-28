@@ -24,10 +24,10 @@ body {
   position: relative;
 }
 
-/* MENU SOBRE A IMAGEM — ligeiramente mais abaixo */
+/* MENU SOBRE A IMAGEM — ajuste milimétrico */
 #main-menu {
   position: absolute;
-  top: 52vh; /* ajustado para descer ligeiramente */
+  top: 57vh; /* descido ligeiramente (antes 56vh) */
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(17, 17, 17, 0.75);
@@ -56,10 +56,10 @@ body {
   color: #ffffff;
 }
 
-/* COPYRIGHT SOBRE A IMAGEM — mantém posição */
+/* COPYRIGHT — desce ligeiramente também */
 .site-footer {
   position: absolute;
-  top: 60vh;
+  top: 74vh; /* descido ligeiramente (antes 72vh) */
   left: 50%;
   transform: translateX(-50%);
   font-size: 0.9rem;
@@ -71,7 +71,7 @@ body {
   z-index: 4;
 }
 
-/* BOTÕES DE LÍNGUA — agora no topo direito */
+/* BOTÕES DE LÍNGUA — no topo direito */
 #lang-switch {
   position: absolute;
   top: 8vh;
