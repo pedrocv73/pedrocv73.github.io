@@ -9,33 +9,40 @@
 
 <body>
 
-  <!-- HERO COM IMAGEM (sem texto duplicado) -->
+  <!-- HERO COM IMAGEM + MENU + COPYRIGHT -->
   <header class="hero">
-  <img src="realpolitik.png" alt="Realpolitik hero" class="hero-img">
-</header>
- <header class="hero"></header>
 
-  <!-- MENU PRINCIPAL -->
-  <nav id="main-menu">
-    <ul>
-      <li><a href="index.html">Crisis Cabinet</a></li>
-      <li><a href="lisbon-files.html">Lisbon Files</a></li>
-      <li><a href="linhas-de-fratura.html">Linhas de Fratura</a></li>
-      <li><a href="facebook.html">Facebook</a></li>
-      <li><a href="portfolio.html">Portfólio</a></li>
-    </ul>
-  </nav>
+    <!-- MENU PRINCIPAL (agora sobre a imagem) -->
+    <nav id="main-menu">
+      <ul>
+        <li><a href="index.html">Crisis Cabinet</a></li>
+        <li><a href="lisbon-files.html">Lisbon Files</a></li>
+        <li><a href="linhas-de-fratura.html">Linhas de Fratura</a></li>
+        <li><a href="facebook.html">Facebook</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+      </ul>
+    </nav>
+
+    <!-- COPYRIGHT (agora mais acima, onde estava o menu) -->
+    <footer class="site-footer">
+      <p>&copy; 2026 Pedro Martins. Todos os direitos reservados.</p>
+    </footer>
+
+  </header>
 
   <!-- INTRODUÇÃO -->
   <section id="intro">
     <div class="intro-block">
 
+      <!-- BOTÕES DE LÍNGUA (restaurado) -->
+      <div id="lang-switch">
+        <button class="lang-btn" data-lang="pt">PT</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+
       <!-- EIXOS EM LINHA -->
       <div class="eixos-inline pt"></div>
       <div class="eixos-inline en"></div>
-
-      <!-- BOTÕES DE LÍNGUA -->
-      <div id="lang-switch"></div>
 
       <!-- DEFINIÇÃO -->
       <p class="cc-definition pt"></p>
@@ -51,11 +58,6 @@
 
     </div>
   </section>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <p>&copy; 2026 Pedro Martins. Todos os direitos reservados.</p>
-  </footer>
 
 </body>
 </html>
