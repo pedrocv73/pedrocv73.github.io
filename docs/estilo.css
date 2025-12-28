@@ -24,16 +24,17 @@ body {
   position: relative;
 }
 
-/* MENU SOBRE A IMAGEM */
+/* MENU SOBRE A IMAGEM — ligeiramente mais abaixo */
 #main-menu {
   position: absolute;
-  top: 48vh; /* ajusta conforme a imagem */
+  top: 52vh; /* ajustado para descer ligeiramente */
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(17, 17, 17, 0.75);
   padding: 0.6rem 1.2rem;
   border-radius: 4px;
   backdrop-filter: blur(4px);
+  z-index: 5;
 }
 
 #main-menu ul {
@@ -55,10 +56,10 @@ body {
   color: #ffffff;
 }
 
-/* COPYRIGHT SOBRE A IMAGEM */
+/* COPYRIGHT SOBRE A IMAGEM — mantém posição */
 .site-footer {
   position: absolute;
-  top: 60vh; /* ajusta conforme a imagem */
+  top: 60vh;
   left: 50%;
   transform: translateX(-50%);
   font-size: 0.9rem;
@@ -67,6 +68,31 @@ body {
   padding: 0.5rem 1rem;
   border-radius: 4px;
   backdrop-filter: blur(4px);
+  z-index: 4;
+}
+
+/* BOTÕES DE LÍNGUA — agora no topo direito */
+#lang-switch {
+  position: absolute;
+  top: 8vh;
+  right: 2vw;
+  z-index: 10;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lang-btn {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #333;
+  background: #fff;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
+  transition: background 0.3s ease;
+}
+
+.lang-btn:hover {
+  background: #f0f0f0;
 }
 
 /* INTRODUÇÃO */
@@ -80,23 +106,4 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-}
-
-/* BOTÕES DE LÍNGUA */
-#lang-switch {
-  display: flex;
-  gap: 1rem;
-}
-
-.lang-btn {
-  padding: 0.4rem 0.8rem;
-  border: 1px solid #333;
-  background: #fff;
-  cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
-  transition: background 0.3s ease;
-}
-
-.lang-btn:hover {
-  background: #f0f0f0;
 }
