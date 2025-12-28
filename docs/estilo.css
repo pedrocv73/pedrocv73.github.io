@@ -12,7 +12,7 @@ body {
   overflow-x: hidden;
 }
 
-/* HERO COM IMG REAL */
+/* HERO COM IMG REAL E ALTURA CONTROLADA */
 .hero {
   position: relative;
   width: 100%;
@@ -22,6 +22,8 @@ body {
 .hero-img {
   width: 100%;
   height: auto;
+  max-height: 75vh; /* imagem mais contida */
+  object-fit: contain; /* garante que nada é cortado */
   display: block;
 }
 
@@ -52,7 +54,7 @@ body {
 /* MENU */
 #main-menu {
   position: absolute;
-  top: 57vh;
+  top: 57vh; /* mantém posição original */
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(17, 17, 17, 0.75);
@@ -94,17 +96,17 @@ body {
   z-index: 4;
 }
 
-/* FRASE EDITORIAL */
+/* FRASE EDITORIAL — MAIOR E MAIS PRESENTE */
 .frase-editorial {
   position: absolute;
-  top: 86vh;
+  top: 82vh; /* sobe um pouco porque a imagem é menor */
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Merriweather', serif;
-  font-size: 1.6rem;
+  font-size: 2rem; /* maior */
   color: #e0d8c0;
   background-color: rgba(40, 30, 20, 0.6);
-  padding: 0.8rem 1.6rem;
+  padding: 1rem 2rem;
   border-radius: 4px;
   backdrop-filter: blur(3px);
   z-index: 3;
