@@ -13,7 +13,7 @@ body {
   overflow-x: hidden;
 }
 
-/* HERO — IMAGEM COM MAIS ÁREA VISÍVEL */
+/* HERO — IMAGEM COM TOPO VISÍVEL */
 .hero {
   background-image: url('realpolitik.png');
   background-size: 115%; /* mostra mais da imagem */
@@ -27,7 +27,7 @@ body {
 /* MENU SOBRE A IMAGEM — ajuste milimétrico */
 #main-menu {
   position: absolute;
-  top: 57vh;
+  top: 57vh; /* descido ligeiramente */
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(17, 17, 17, 0.75);
@@ -59,7 +59,7 @@ body {
 /* COPYRIGHT — desce ligeiramente também */
 .site-footer {
   position: absolute;
-  top: 74vh;
+  top: 74vh; /* descido ligeiramente */
   left: 50%;
   transform: translateX(-50%);
   font-size: 0.9rem;
@@ -69,6 +69,23 @@ body {
   border-radius: 4px;
   backdrop-filter: blur(4px);
   z-index: 4;
+}
+
+/* FRASE EDITORIAL — NOVA LINHA ABAIXO DO COPYRIGHT */
+.frase-editorial {
+  position: absolute;
+  top: 82vh; /* abaixo do copyright */
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Merriweather', serif;
+  font-size: 1.2rem;
+  color: #e0d8c0; /* tom creme semelhante ao texto da imagem */
+  background-color: rgba(40, 30, 20, 0.6); /* tom escuro com transparência */
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  backdrop-filter: blur(3px);
+  z-index: 3;
+  text-align: center;
 }
 
 /* BOTÕES DE LÍNGUA — no topo direito */
@@ -107,3 +124,4 @@ body {
   flex-direction: column;
   gap: 2rem;
 }
+
