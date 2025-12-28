@@ -10,31 +10,37 @@ body {
   background-color: #ffffff;
   color: #333;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
-/* HERO — IMAGEM EM ECRÃ INTEIRO */
+/* HERO — IMAGEM COM TOPO VISÍVEL */
 .hero {
+  background-image: url('realpolitik.png');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
   width: 100%;
-  overflow: hidden;
+  position: relative;
 }
 
-.hero-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* MENU PRINCIPAL */
+/* MENU SOBRE A IMAGEM */
 #main-menu {
-  background-color: #111;
-  padding: 1rem 0;
+  position: absolute;
+  top: 48vh; /* ajusta conforme a imagem */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(17, 17, 17, 0.75);
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
 }
 
 #main-menu ul {
   list-style: none;
   display: flex;
-  justify-content: center;
   gap: 2rem;
+  justify-content: center;
 }
 
 #main-menu a {
@@ -49,10 +55,24 @@ body {
   color: #ffffff;
 }
 
+/* COPYRIGHT SOBRE A IMAGEM */
+.site-footer {
+  position: absolute;
+  top: 60vh; /* ajusta conforme a imagem */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.9rem;
+  color: #ccc;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+}
+
 /* INTRODUÇÃO */
 #intro {
   max-width: 900px;
-  margin: 3rem auto;
+  margin: 4rem auto;
   padding: 0 2rem;
 }
 
@@ -62,10 +82,21 @@ body {
   gap: 2rem;
 }
 
-/* FOOTER */
-.site-footer {
-  text-align: center;
-  padding: 2rem 0;
-  font-size: 0.9rem;
-  color: #555;
+/* BOTÕES DE LÍNGUA */
+#lang-switch {
+  display: flex;
+  gap: 1rem;
+}
+
+.lang-btn {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #333;
+  background: #fff;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  transition: background 0.3s ease;
+}
+
+.lang-btn:hover {
+  background: #f0f0f0;
 }
