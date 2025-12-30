@@ -96,3 +96,59 @@ body {
 }
 
 #main-menu a:hover {
+  color: #ffffff;
+}
+
+/* COPYRIGHT — AJUSTADO */
+.site-footer {
+  position: absolute;
+  top: 70vh;          /* SUBIU */
+  left: 70%;          /* DESLOCADO PARA A DIREITA */
+  transform: translateX(-50%);
+  font-size: 0.9rem;
+  color: #ccc;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+  z-index: 14;
+}
+
+/* FRASE EDITORIAL — AJUSTADA */
+.frase-editorial {
+  position: absolute;
+  top: 66vh; /* SUBIU PARA PERTO DO MENU */
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  color: #c8b890;
+  background-color: rgba(40, 30, 20, 0.6);
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  backdrop-filter: blur(3px);
+  z-index: 13;
+  text-align: center;
+  max-width: 90vw;
+}
+
+/* INTRODUÇÃO */
+#intro {
+  max-width: 900px;
+  margin: 6rem auto 4rem auto;
+  padding: 0 2rem;
+}
+
+.intro-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Estado ativo no menu — evita loop e desativa clique */
+#main-menu a.active {
+  color: #aaa;
+  pointer-events: none;
+  text-decoration: none;
+  cursor: default;
+}
