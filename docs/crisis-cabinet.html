@@ -7,18 +7,6 @@
   <link rel="stylesheet" href="estilo.css">
   <script src="idiomas.js" defer></script>
 </head>
-  
-  <script>
-  const currentPage = window.location.pathname.split("/").pop();
-  const links = document.querySelectorAll('#main-menu a');
-
-  links.forEach(link => {
-    const href = link.getAttribute('href').replace("/", "");
-    if (href === currentPage) {
-      link.classList.add('active');
-    }
-  });
-</script>
 
 <body>
 
@@ -45,7 +33,7 @@
   </ul>
 </nav>
 
-  <!-- FRASE EDITORIAL DO HERO (igual ao index, se quiseres manter) -->
+  <!-- FRASE EDITORIAL DO HERO -->
   <div class="frase-editorial pt">
     A realpolitik não se escreve em comunicados
   </div>
@@ -54,7 +42,6 @@
   </div>
 
 </header>
-
 
 <!-- ============================
      SECÇÃO: FRASES DO CRISIS CABINET
@@ -99,10 +86,8 @@
   </div>
 </section>
 
-
 <!-- ============================
      SECÇÃO: TEXTO CONCEPTUAL
-     (por enquanto vazio, só estrutura)
      ============================ -->
 <section id="cc-conceito">
   <div class="conteudo">
@@ -124,10 +109,8 @@
   </div>
 </section>
 
-
 <!-- ============================
      SECÇÃO: PERSONAGENS
-     (placeholder por agora)
      ============================ -->
 <section id="cc-personagens">
   <div class="conteudo">
@@ -149,11 +132,23 @@
   </div>
 </section>
 
-
 <!-- FOOTER -->
 <footer class="site-footer">
   <p>&copy; 2026 Pedro Martins. Todos os direitos reservados.</p>
 </footer>
+
+<!-- SCRIPT DE PÁGINA ATIVA (AGORA NO SÍTIO CERTO) -->
+<script>
+  const currentPage = window.location.pathname.split("/").pop();
+  const links = document.querySelectorAll('#main-menu a');
+
+  links.forEach(link => {
+    const href = link.getAttribute('href').replace("/", "");
+    if (href === currentPage) {
+      link.classList.add('active');
+    }
+  });
+</script>
 
 </body>
 </html>
