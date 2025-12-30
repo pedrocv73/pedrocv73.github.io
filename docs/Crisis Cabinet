@@ -33,9 +33,12 @@
     </ul>
   </nav>
 
-  <!-- FRASE EDITORIAL DO HERO (opcional manter) -->
-  <div class="frase-editorial">
+  <!-- FRASE EDITORIAL DO HERO (igual ao index, se quiseres manter) -->
+  <div class="frase-editorial pt">
     A realpolitik não se escreve em comunicados
+  </div>
+  <div class="frase-editorial en" style="display:none;">
+    Realpolitik is not written in press releases
   </div>
 
 </header>
@@ -50,15 +53,35 @@
     <!-- PORTUGUÊS -->
     <div class="pt">
       <h2>Crisis Cabinet</h2>
-      <p class="frase-pt-1"></p>
-      <p class="frase-pt-2"></p>
+
+      <p class="frase-pt-1">
+        Crisis Cabinet é o meu núcleo estratégico.
+      </p>
+
+      <p class="frase-pt-2">
+        O espaço onde articulo método, análise e projetos editoriais, local onde interpreto as tensões, as forças e os padrões que moldam a História e o presente.
+      </p>
+
+      <p class="frase-pt-3">
+        Em suma, é o meu espaço de interpretação, onde História, Realpolitik e a análise contemporânea convergem num mesmo eixo estratégico.
+      </p>
     </div>
 
     <!-- INGLÊS -->
-    <div class="en">
+    <div class="en" style="display:none;">
       <h2>Crisis Cabinet</h2>
-      <p class="frase-en-1"></p>
-      <p class="frase-en-2"></p>
+
+      <p class="frase-en-1">
+        Crisis Cabinet is my strategic core.
+      </p>
+
+      <p class="frase-en-2">
+        It is the space where I articulate method, analysis and editorial projects — where I interpret the tensions, forces and patterns that shape both History and the present.
+      </p>
+
+      <p class="frase-en-3">
+        In essence, it is my space of interpretation, where History, Realpolitik and contemporary analysis converge along the same strategic axis.
+      </p>
     </div>
 
   </div>
@@ -67,18 +90,23 @@
 
 <!-- ============================
      SECÇÃO: TEXTO CONCEPTUAL
+     (por enquanto vazio, só estrutura)
      ============================ -->
 <section id="cc-conceito">
   <div class="conteudo">
 
     <div class="pt">
       <h3>Conceito</h3>
-      <p class="conceito-pt"></p>
+      <p class="conceito-pt">
+        <!-- Texto conceptual em português a definir mais tarde. -->
+      </p>
     </div>
 
-    <div class="en">
+    <div class="en" style="display:none;">
       <h3>Concept</h3>
-      <p class="conceito-en"></p>
+      <p class="conceito-en">
+        <!-- Conceptual text in English to be added later. -->
+      </p>
     </div>
 
   </div>
@@ -87,18 +115,23 @@
 
 <!-- ============================
      SECÇÃO: PERSONAGENS
+     (placeholder por agora)
      ============================ -->
 <section id="cc-personagens">
   <div class="conteudo">
 
     <div class="pt">
       <h3>Personagens</h3>
-      <div class="lista-personagens-pt"></div>
+      <div class="lista-personagens-pt">
+        <!-- Lista de personagens em PT a definir. -->
+      </div>
     </div>
 
-    <div class="en">
+    <div class="en" style="display:none;">
       <h3>Characters</h3>
-      <div class="lista-personagens-en"></div>
+      <div class="lista-personagens-en">
+        <!-- Characters list in EN to be added. -->
+      </div>
     </div>
 
   </div>
@@ -112,3 +145,4 @@
 
 </body>
 </html>
+
