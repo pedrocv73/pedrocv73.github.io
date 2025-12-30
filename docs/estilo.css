@@ -144,3 +144,10 @@ body {
   flex-direction: column;
   gap: 2rem;
 }
+/* Estado ativo no menu — evita loop e desativa clique */
+#main-menu a.active {
+  color: #aaa;
+  pointer-events: none;
+  text-decoration: none;
+  cursor: default;
+}
