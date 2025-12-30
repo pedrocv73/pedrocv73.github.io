@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crisis Cabinet — Pedro Martins</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="idiomas.js" defer></script>
+</head>
+
+<body>
+
+<header class="hero">
+
+  <!-- IMAGEM HERO -->
+  <img src="realpolitik.png" class="hero-img" alt="Imagem de fundo">
+
+  <!-- BOTÕES DE LÍNGUA -->
+  <div id="lang-switch">
+    <button class="lang-btn" data-lang="pt">PT</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+
+  <!-- MENU PRINCIPAL -->
+  <nav id="main-menu">
+    <ul>
+      <li><a href="index.html">Crisis Cabinet</a></li>
+      <li><a href="lisbon-files.html">Lisbon Files</a></li>
+      <li><a href="linhas-de-fratura.html">Linhas de Fratura</a></li>
+      <li><a href="facebook.html">Facebook</a></li>
+      <li><a href="portfolio.html">Portfólio</a></li>
+      <li><a href="about.html">Quem sou eu</a></li>
+    </ul>
+  </nav>
+
+  <!-- FRASE EDITORIAL DO HERO (opcional manter) -->
+  <div class="frase-editorial">
+    A realpolitik não se escreve em comunicados
+  </div>
+
+</header>
+
+
+<!-- ============================
+     SECÇÃO: FRASES DO CRISIS CABINET
+     ============================ -->
+<section id="cc-frases">
+  <div class="conteudo">
+
+    <!-- PORTUGUÊS -->
+    <div class="pt">
+      <h2>Crisis Cabinet</h2>
+      <p class="frase-pt-1"></p>
+      <p class="frase-pt-2"></p>
+    </div>
+
+    <!-- INGLÊS -->
+    <div class="en">
+      <h2>Crisis Cabinet</h2>
+      <p class="frase-en-1"></p>
+      <p class="frase-en-2"></p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================
+     SECÇÃO: TEXTO CONCEPTUAL
+     ============================ -->
+<section id="cc-conceito">
+  <div class="conteudo">
+
+    <div class="pt">
+      <h3>Conceito</h3>
+      <p class="conceito-pt"></p>
+    </div>
+
+    <div class="en">
+      <h3>Concept</h3>
+      <p class="conceito-en"></p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================
+     SECÇÃO: PERSONAGENS
+     ============================ -->
+<section id="cc-personagens">
+  <div class="conteudo">
+
+    <div class="pt">
+      <h3>Personagens</h3>
+      <div class="lista-personagens-pt"></div>
+    </div>
+
+    <div class="en">
+      <h3>Characters</h3>
+      <div class="lista-personagens-en"></div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p>&copy; 2026 Pedro Martins. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
