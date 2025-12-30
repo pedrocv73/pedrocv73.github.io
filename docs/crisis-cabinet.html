@@ -7,6 +7,18 @@
   <link rel="stylesheet" href="estilo.css">
   <script src="idiomas.js" defer></script>
 </head>
+  
+  <script>
+  const currentPage = window.location.pathname.split("/").pop();
+  const links = document.querySelectorAll('#main-menu a');
+
+  links.forEach(link => {
+    const href = link.getAttribute('href').replace("/", "");
+    if (href === currentPage) {
+      link.classList.add('active');
+    }
+  });
+</script>
 
 <body>
 
