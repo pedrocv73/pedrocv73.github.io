@@ -1,19 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const buttons = document.querySelectorAll(".lang-btn");
-  const ptElements = document.querySelectorAll(".pt");
-  const enElements = document.querySelectorAll(".en");
+  const langButtons = document.querySelectorAll(".lang-btn");
 
-  buttons.forEach(button => {
+  langButtons.forEach(button => {
     button.addEventListener("click", () => {
-      const lang = button.getAttribute("data-lang");
+      const selectedLang = button.getAttribute("data-lang");
 
-      if (lang === "pt") {
-        ptElements.forEach(el => el.style.display = "block");
-        enElements.forEach(el => el.style.display = "none");
-      } else {
-        ptElements.forEach(el => el.style.display = "none");
-        enElements.forEach(el => el.style.display = "block");
-      }
+      // Esconde todos os blocos
+      document.querySelectorAll(".pt, .en").forEach(el => {
+        el.style.display = "none";
+      });
+
+      // Mostra apenas os da língua selecionada
+      document.querySelectorAll("." + selectedLang).forEach(el => {
+        el.style.display = "block";
+      });
     });
   });
 });
