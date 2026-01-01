@@ -118,10 +118,9 @@ body {
   cursor: default;
 }
 
-/* FRASE EDITORIAL — AJUSTADA */
 .frase-editorial {
   position: absolute;
-  top: 50vh; /* agora acima do menu */
+  top: calc(50vh + 57px); /* desce 1,5cm em relação à posição anterior */
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Merriweather', serif;
@@ -135,6 +134,7 @@ body {
   text-align: center;
   max-width: 90vw;
 }
+
 
 /* COPYRIGHT — AJUSTADO */
 .site-footer {
