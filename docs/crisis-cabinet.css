@@ -2,7 +2,6 @@
    CRISIS CABINET — CSS ESPECÍFICO DA SECÇÃO
    ============================================ */
 
-
 /* ============================
    1. SECÇÃO DAS FRASES
    ============================ */
@@ -32,6 +31,81 @@
   line-height: 1.6;
   margin-bottom: 1rem;
 }
+
+
+/* ============================
+   2. MINI-MENU INTERNO
+   ============================ */
+
+/* descer ~0,5 cm e garantir que fica por cima */
+.cc-submenu {
+  position: absolute;
+  top: calc(50vh + 128px); /* antes 100px */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(17, 17, 17, 0.85);
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+  z-index: 100; /* acima das frases */
+}
+
+.cc-submenu ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.cc-submenu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.85rem;
+}
+
+.cc-submenu a:hover {
+  color: #d0d4dc;
+}
+
+
+/* ============================
+   3. SECÇÕES: CONCEITO E PERSONAGENS
+   ============================ */
+
+#cc-conceito,
+#cc-personagens {
+  margin-top: 5rem;
+  padding: 2rem;
+}
+
+/* esconder títulos repetidos enquanto não há conteúdo */
+#cc-conceito h3,
+#cc-personagens h3 {
+  display: none;
+}
+
+.lista-personagens-pt,
+.lista-personagens-en {
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+.lista-personagens-pt div,
+.lista-personagens-en div {
+  margin-bottom: 0.8rem;
+}
+
+
+/* ============================
+   4. BILINGUE
+   ============================ */
+
+.en {
+  display: none;
+}
+
 
 
 /* ============================
