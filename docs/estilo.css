@@ -80,14 +80,25 @@ body {
   border-radius: 4px;
   backdrop-filter: blur(4px);
   z-index: 15;
+  width: max-content;
 }
 
+/* Ambas as listas ocupam o mesmo espaço */
 .menu-principal ul {
   list-style: none;
   display: flex;
   gap: 2rem;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
+/* Esconde a versão EN por defeito */
+.menu-principal .en {
+  display: none;
+}
+
+/* Estilo dos links */
 .menu-principal a {
   color: #d0d4dc;
   text-decoration: none;
@@ -99,7 +110,7 @@ body {
   color: #ffffff;
 }
 
-/* Estado ativo no menu */
+/* Estado ativo */
 .menu-principal a.active {
   color: #aaa;
   pointer-events: none;
