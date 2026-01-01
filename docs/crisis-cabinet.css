@@ -47,9 +47,10 @@
    2. MINI-MENU INTERNO
    ============================ */
 
+/* MINI-MENU INTERNO — descer ~3 cm */
 .cc-submenu {
   position: absolute;
-  top: calc(50vh + 100px);
+  top: calc(50vh + 100px); /* antes 60px */
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(17, 17, 17, 0.85);
@@ -59,25 +60,18 @@
   z-index: 16;
 }
 
-.cc-submenu ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  margin: 0;
-  padding: 0;
+/* SECÇÃO DAS FRASES — subir ~5 cm e puxar à esquerda */
+#cc-frases {
+  margin-top: 0rem; /* antes 3rem */
 }
 
-.cc-submenu a {
-  color: #ffffff;
-  text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 0.85rem;
+#cc-frases .conteudo {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+  padding-left: 0; /* opcional */
 }
-
-.cc-submenu a:hover {
-  color: #d0d4dc;
-}
-
 
 /* ============================
    3. SECÇÕES: CONCEITO E PERSONAGENS
