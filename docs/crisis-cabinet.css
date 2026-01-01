@@ -2,28 +2,29 @@
    CRISIS CABINET — CSS ESPECÍFICO DA SECÇÃO
    ============================================ */
 
+
 /* ============================
    1. SECÇÃO DAS FRASES
    ============================ */
 
-/* subir ~4 cm e encostar à esquerda */
+/* subir mais 4 cm e afastar da margem esquerda */
 #cc-frases {
-  margin-top: -6rem; /* sobe ~96px */
+  margin-top: -13rem; /* sobe ~200px no total */
   position: relative;
   z-index: 1; /* fica abaixo do mini-menu */
 }
 
+/* afastar 0,5 cm da margem esquerda */
 #cc-frases .conteudo {
   max-width: 900px;
   margin-left: 0;
-  padding: 2rem 2rem 2rem 0;
+  padding: 2rem 2rem 2rem 14px; /* 14px ≈ 0,5 cm */
   text-align: left;
 }
 
+/* remover o título "Crisis Cabinet" por redundância */
 #cc-frases h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  text-align: left;
+  display: none;
 }
 
 #cc-frases p {
@@ -37,92 +38,16 @@
    2. MINI-MENU INTERNO
    ============================ */
 
-/* descer ~0,5 cm e garantir que fica por cima */
 .cc-submenu {
   position: absolute;
-  top: calc(50vh + 128px); /* antes 100px */
+  top: calc(50vh + 128px); /* perfeito como está */
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(17, 17, 17, 0.85);
   padding: 0.4rem 1rem;
   border-radius: 4px;
   backdrop-filter: blur(4px);
-  z-index: 100; /* acima das frases */
-}
-
-.cc-submenu ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  margin: 0;
-  padding: 0;
-}
-
-.cc-submenu a {
-  color: #ffffff;
-  text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 0.85rem;
-}
-
-.cc-submenu a:hover {
-  color: #d0d4dc;
-}
-
-
-/* ============================
-   3. SECÇÕES: CONCEITO E PERSONAGENS
-   ============================ */
-
-#cc-conceito,
-#cc-personagens {
-  margin-top: 5rem;
-  padding: 2rem;
-}
-
-/* esconder títulos repetidos enquanto não há conteúdo */
-#cc-conceito h3,
-#cc-personagens h3 {
-  display: none;
-}
-
-.lista-personagens-pt,
-.lista-personagens-en {
-  margin-top: 1rem;
-  padding-left: 1rem;
-}
-
-.lista-personagens-pt div,
-.lista-personagens-en div {
-  margin-bottom: 0.8rem;
-}
-
-
-/* ============================
-   4. BILINGUE
-   ============================ */
-
-.en {
-  display: none;
-}
-
-
-
-/* ============================
-   2. MINI-MENU INTERNO
-   ============================ */
-
-/* descer ~0,5 cm e garantir que fica por cima */
-.cc-submenu {
-  position: absolute;
-  top: calc(50vh + 128px); /* antes 100px */
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(17, 17, 17, 0.85);
-  padding: 0.4rem 1rem;
-  border-radius: 4px;
-  backdrop-filter: blur(4px);
-  z-index: 100; /* acima das frases */
+  z-index: 100;
 }
 
 .cc-submenu ul {
