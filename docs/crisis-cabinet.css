@@ -36,9 +36,10 @@
    2. MINI-MENU INTERNO
    ============================ */
 
+/* MINI-MENU INTERNO */
 .cc-submenu {
   position: absolute;
-  top: calc(50vh + 120px); /* ajusta conforme a frase editorial */
+  top: calc(50vh + 100px); /* sobe ou desce conforme o gosto */
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(17, 17, 17, 0.75);
@@ -48,24 +49,23 @@
   z-index: 16;
 }
 
-.cc-submenu ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  margin: 0;
-  padding: 0;
+/* SECÇÃO DAS FRASES */
+#cc-frases {
+  margin-top: 6rem; /* garante espaço abaixo do mini-menu */
 }
 
-.cc-submenu a {
-  color: #d0d4dc;
-  text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 0.85rem;
+#cc-frases .conteudo {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left; /* alinhamento à esquerda */
 }
 
-.cc-submenu a:hover {
-  color: #ffffff;
+#cc-frases h2 {
+  text-align: left;
+  margin-bottom: 1rem;
 }
+
 
 
 
