@@ -7,21 +7,30 @@
 /* ============================
    1. AJUSTE DA SECÇÃO INICIAL
    ============================ */
+/* ============================================
+   CRISIS CABINET — CSS ESPECÍFICO DA SECÇÃO
+   ============================================ */
 
-/* Sobe a secção das frases para não ficar escondida atrás do hero */
+
+/* ============================
+   1. SECÇÃO DAS FRASES
+   ============================ */
+
 #cc-frases {
-  margin-top: -4rem; /* ajusta entre -3rem e -6rem conforme o gosto */
+  margin-top: 3rem; /* ajusta conforme o gosto */
 }
 
 #cc-frases .conteudo {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
+  text-align: left;
 }
 
 #cc-frases h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  text-align: left;
 }
 
 #cc-frases p {
@@ -31,77 +40,56 @@
 }
 
 
-
 /* ============================
    2. MINI-MENU INTERNO
    ============================ */
 
-/* MINI-MENU INTERNO */
 .cc-submenu {
   position: absolute;
-  top: calc(50vh + 100px); /* sobe ou desce conforme o gosto */
+  top: calc(50vh + 60px);
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(17, 17, 17, 0.75);
+  background-color: rgba(17, 17, 17, 0.85);
   padding: 0.4rem 1rem;
   border-radius: 4px;
   backdrop-filter: blur(4px);
   z-index: 16;
 }
 
-/* SECÇÃO DAS FRASES */
-#cc-frases {
-  margin-top: 6rem; /* garante espaço abaixo do mini-menu */
+.cc-submenu ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
 }
 
-#cc-frases .conteudo {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: left; /* alinhamento à esquerda */
+.cc-submenu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.85rem;
 }
 
-#cc-frases h2 {
-  text-align: left;
-  margin-bottom: 1rem;
+.cc-submenu a:hover {
+  color: #d0d4dc;
 }
-
-
 
 
 /* ============================
-   3. SECÇÃO: CONCEITO
+   3. SECÇÕES: CONCEITO E PERSONAGENS
    ============================ */
 
-#cc-conceito {
-  margin-top: 5rem;
-  padding: 2rem;
-}
-
-#cc-conceito h3 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-}
-
-#cc-conceito p {
-  font-size: 1.05rem;
-  line-height: 1.6;
-}
-
-
-
-/* ============================
-   4. SECÇÃO: PERSONAGENS
-   ============================ */
-
+#cc-conceito,
 #cc-personagens {
   margin-top: 5rem;
   padding: 2rem;
 }
 
+/* esconder títulos repetidos */
+#cc-conceito h3,
 #cc-personagens h3 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
+  display: none;
 }
 
 .lista-personagens-pt,
@@ -116,12 +104,10 @@
 }
 
 
-
 /* ============================
-   5. BILINGUE
+   4. BILINGUE
    ============================ */
 
-/* A versão EN começa escondida */
 .en {
   display: none;
 }
