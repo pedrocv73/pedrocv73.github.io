@@ -134,7 +134,10 @@ body {
   text-align: center;
   max-width: 90vw;
 }
-
+/* Esconde a versão inglesa da frase editorial por defeito */
+.frase-editorial.en {
+  display: none;
+}
 
 /* COPYRIGHT — AJUSTADO */
 .site-footer {
