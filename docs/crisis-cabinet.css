@@ -16,11 +16,17 @@
    1. SECÇÃO DAS FRASES
    ============================ */
 
+/* SECÇÃO DAS FRASES — subir ~5 cm e puxar à esquerda */
 #cc-frases {
-  #cc-frases {
-  margin-top: 0rem;
+  margin-top: 0rem; /* antes 3rem */
 }
-/* ajusta conforme o gosto */
+
+#cc-frases .conteudo {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+  padding-left: 0; /* opcional */
 }
 
 #cc-frases .conteudo {
