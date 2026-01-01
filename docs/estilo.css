@@ -69,8 +69,8 @@ body {
   background: #f0f0f0;
 }
 
-/* MENU PRINCIPAL */
-#main-menu {
+/* MENU PRINCIPAL — CORRIGIDO */
+.menu-principal {
   position: absolute;
   top: 57vh;
   left: 50%;
@@ -82,37 +82,35 @@ body {
   z-index: 15;
 }
 
-#main-menu ul {
+.menu-principal ul {
   list-style: none;
   display: flex;
   gap: 2rem;
 }
 
-#main-menu a {
+.menu-principal a {
   color: #d0d4dc;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   font-size: 0.95rem;
 }
 
-#main-menu a:hover {
+.menu-principal a:hover {
   color: #ffffff;
 }
 
-/* COPYRIGHT — AJUSTADO */
-.site-footer {
-  position: absolute;
-  bottom: 12px;
-  right: 24px;
-  font-size: 0.9rem;     /* ligeiramente maior */
-  color: #000000;         /* preto */
-  z-index: 10;
+/* Estado ativo no menu */
+.menu-principal a.active {
+  color: #aaa;
+  pointer-events: none;
+  text-decoration: none;
+  cursor: default;
 }
 
 /* FRASE EDITORIAL — AJUSTADA */
 .frase-editorial {
   position: absolute;
-  top: 66vh; /* SUBIU PARA PERTO DO MENU */
+  top: 50vh; /* agora acima do menu */
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Merriweather', serif;
@@ -127,6 +125,16 @@ body {
   max-width: 90vw;
 }
 
+/* COPYRIGHT — AJUSTADO */
+.site-footer {
+  position: absolute;
+  bottom: 12px;
+  right: 24px;
+  font-size: 0.9rem;
+  color: #000000;
+  z-index: 10;
+}
+
 /* INTRODUÇÃO */
 #intro {
   max-width: 900px;
@@ -138,12 +146,4 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-}
-
-/* Estado ativo no menu — evita loop e desativa clique */
-#main-menu a.active {
-  color: #aaa;
-  pointer-events: none;
-  text-decoration: none;
-  cursor: default;
 }
