@@ -1,14 +1,5 @@
 /* ============================================
    CRISIS CABINET — CSS ESPECÍFICO DA SECÇÃO
-   Arquitetura modular por universos editoriais
-   ============================================ */
-
-
-/* ============================
-   1. AJUSTE DA SECÇÃO INICIAL
-   ============================ */
-/* ============================================
-   CRISIS CABINET — CSS ESPECÍFICO DA SECÇÃO
    ============================================ */
 
 
@@ -16,9 +7,9 @@
    1. SECÇÃO DAS FRASES
    ============================ */
 
-/* SECÇÃO DAS FRASES — subir ~5 cm e puxar à esquerda */
+/* subir ~5 cm e puxar à esquerda */
 #cc-frases {
-  margin-top: 0rem; /* antes 3rem */
+  margin-top: 0rem; /* ajusta se quiseres mais espaço */
 }
 
 #cc-frases .conteudo {
@@ -26,14 +17,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: left;
-  padding-left: 0; /* opcional */
-}
-
-#cc-frases .conteudo {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: left;
+  padding-left: 0; /* opcional, podes remover se já estiver bom */
 }
 
 #cc-frases h2 {
@@ -53,10 +37,10 @@
    2. MINI-MENU INTERNO
    ============================ */
 
-/* MINI-MENU INTERNO — descer ~3 cm */
+/* descer ~3 cm em relação à versão anterior */
 .cc-submenu {
   position: absolute;
-  top: calc(50vh + 100px); /* antes 60px */
+  top: calc(50vh + 100px);
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(17, 17, 17, 0.85);
@@ -66,18 +50,25 @@
   z-index: 16;
 }
 
-/* SECÇÃO DAS FRASES — subir ~5 cm e puxar à esquerda */
-#cc-frases {
-  margin-top: 0rem; /* antes 3rem */
+.cc-submenu ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
 }
 
-#cc-frases .conteudo {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: left;
-  padding-left: 0; /* opcional */
+.cc-submenu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.85rem;
 }
+
+.cc-submenu a:hover {
+  color: #d0d4dc;
+}
+
 
 /* ============================
    3. SECÇÕES: CONCEITO E PERSONAGENS
@@ -89,7 +80,7 @@
   padding: 2rem;
 }
 
-/* esconder títulos repetidos */
+/* esconder títulos repetidos enquanto não há conteúdo */
 #cc-conceito h3,
 #cc-personagens h3 {
   display: none;
