@@ -94,7 +94,7 @@ body {
 }
 
 /* Esconde a versão EN por defeito */
-.menu-principal .en {
+.menu-principal ul.en {
   display: none;
 }
 
