@@ -102,16 +102,11 @@ body {
 /* COPYRIGHT — AJUSTADO */
 .site-footer {
   position: absolute;
-  top: 70vh;          /* SUBIU */
-  left: 70%;          /* DESLOCADO PARA A DIREITA */
-  transform: translateX(-50%);
-  font-size: 0.9rem;
-  color: #ccc;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  backdrop-filter: blur(4px);
-  z-index: 14;
+  bottom: 12px;       /* ajusta a distância do fundo da página */
+  right: 24px;        /* empurra para a direita */
+  font-size: 0.8rem;
+  color: #ffffff;     /* ou o tom que estiveres a usar no fundo */
+  z-index: 10;        /* garante que fica visível por cima de outros elementos */
 }
 
 /* FRASE EDITORIAL — AJUSTADA */
