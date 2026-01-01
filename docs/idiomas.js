@@ -5,14 +5,19 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", () => {
       const selectedLang = button.getAttribute("data-lang");
 
-      // Esconde todos os blocos
+      // Esconde tudo
       document.querySelectorAll(".pt, .en").forEach(el => {
         el.style.display = "none";
       });
 
-      // Mostra apenas os da língua selecionada
+      // Mostra a língua selecionada
       document.querySelectorAll("." + selectedLang).forEach(el => {
-        el.style.display = "block";
+        // Se for UL, mantém flex
+        if (el.tagName === "UL") {
+          el.style.display = "flex";
+        } else {
+          el.style.display = "block";
+        }
       });
     });
   });
