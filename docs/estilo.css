@@ -102,11 +102,11 @@ body {
 /* COPYRIGHT — AJUSTADO */
 .site-footer {
   position: absolute;
-  bottom: 12px;       /* ajusta a distância do fundo da página */
-  right: 24px;        /* empurra para a direita */
-  font-size: 0.8rem;
-  color: #ffffff;     /* ou o tom que estiveres a usar no fundo */
-  z-index: 10;        /* garante que fica visível por cima de outros elementos */
+  bottom: 12px;
+  right: 24px;
+  font-size: 0.9rem;     /* ligeiramente maior */
+  color: #000000;         /* preto */
+  z-index: 10;
 }
 
 /* FRASE EDITORIAL — AJUSTADA */
