@@ -120,7 +120,7 @@ body {
 
 .frase-editorial {
   position: absolute;
-  top: calc(50vh + 57px); /* desce 1,5cm em relação à posição anterior */
+  top: calc(50vh + 38px); /* 57px - 19px = 38px */
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Merriweather', serif;
