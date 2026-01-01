@@ -7,17 +7,18 @@
    1. SECÇÃO DAS FRASES
    ============================ */
 
-/* subir ~5 cm e puxar à esquerda */
+/* subir ~4 cm e encostar à esquerda */
 #cc-frases {
-  margin-top: 0rem; /* ajusta se quiseres mais espaço */
+  margin-top: -6rem; /* sobe ~96px */
+  position: relative;
+  z-index: 1; /* fica abaixo do mini-menu */
 }
 
 #cc-frases .conteudo {
   max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin-left: 0;
+  padding: 2rem 2rem 2rem 0;
   text-align: left;
-  padding-left: 0; /* opcional, podes remover se já estiver bom */
 }
 
 #cc-frases h2 {
@@ -37,17 +38,17 @@
    2. MINI-MENU INTERNO
    ============================ */
 
-/* descer ~3 cm em relação à versão anterior */
+/* descer ~0,5 cm e garantir que fica por cima */
 .cc-submenu {
   position: absolute;
-  top: calc(50vh + 100px);
+  top: calc(50vh + 128px); /* antes 100px */
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(17, 17, 17, 0.85);
   padding: 0.4rem 1rem;
   border-radius: 4px;
   backdrop-filter: blur(4px);
-  z-index: 16;
+  z-index: 100; /* acima das frases */
 }
 
 .cc-submenu ul {
