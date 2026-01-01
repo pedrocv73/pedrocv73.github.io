@@ -17,7 +17,10 @@
    ============================ */
 
 #cc-frases {
-  margin-top: 3rem; /* ajusta conforme o gosto */
+  #cc-frases {
+  margin-top: 0rem;
+}
+/* ajusta conforme o gosto */
 }
 
 #cc-frases .conteudo {
@@ -46,7 +49,7 @@
 
 .cc-submenu {
   position: absolute;
-  top: calc(50vh + 60px);
+  top: calc(50vh + 100px);
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(17, 17, 17, 0.85);
