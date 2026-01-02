@@ -11,7 +11,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  background: #ffffff; /* fundo limpo — imagem vem do .hero */
+  background: #ffffff;
   color: #000;
   overflow-x: hidden;
 }
@@ -25,7 +25,7 @@ body {
 .conceito-submenu,
 #conceito-wrapper {
   position: relative;
-  z-index: 10; /* tudo acima da imagem de fundo */
+  z-index: 10;
 }
 
 
@@ -35,7 +35,7 @@ body {
 
 #conceito-hero {
   text-align: center;
-  margin-top: -2rem; /* ainda mais acima */
+  margin-top: -2rem;
 }
 
 .conceito-hero-frase h1 {
@@ -50,8 +50,15 @@ body {
    3. MINI-MENU EXCLUSIVO
    ============================ */
 
+/* Wrapper para posicionamento correto */
+.menu-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.2rem;      /* espaço abaixo da imagem */
+  margin-bottom: 1.2rem;   /* espaço antes da frase editorial */
+}
+
 .conceito-submenu {
-  margin-top: 0.8rem; /* mais próximo da frase */
   text-align: center;
 }
 
@@ -60,7 +67,7 @@ body {
   padding: 0;
   margin: 0;
   display: inline-flex;
-  gap: 0.6rem; /* ainda mais juntos */
+  gap: 0.6rem;
 }
 
 .conceito-submenu a {
@@ -71,7 +78,7 @@ body {
   background: rgba(17, 17, 17, 0.85);
   border-radius: 4px;
   backdrop-filter: blur(4px);
-  border: 1px solid rgba(255,255,255,0.35); /* look de botão */
+  border: 1px solid rgba(255,255,255,0.35);
   cursor: pointer;
 }
 
@@ -87,8 +94,9 @@ body {
 
 #conceito-wrapper {
   max-width: 900px;
-  margin: 0 auto 3rem auto; /* ainda mais acima */
-  padding: 0 1.5rem;
+  margin: 1.5cm auto 3rem auto; /* distância entre frase editorial e início do texto */
+  padding-left: 2vw;            /* aproxima o texto da esquerda */
+  padding-right: 2vw;
 }
 
 
@@ -103,10 +111,14 @@ body {
   line-height: 1.65;
   font-size: 1.05rem;
   backdrop-filter: blur(4px);
+  max-width: 800px;   /* largura editorial */
+  margin: 0 auto;     /* centraliza dentro do wrapper */
 }
 
 .conceito-bloco p {
   margin-bottom: 1.2rem;
+  text-align: justify;
+  line-height: 1.6;
 }
 
 
@@ -114,6 +126,10 @@ body {
    6. SISTEMA BILINGUE
    ============================ */
 
-.en {
+.pt, .en {
   display: none;
+}
+
+.pt.active, .en.active {
+  display: block;
 }
