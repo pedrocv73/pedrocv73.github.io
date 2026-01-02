@@ -1,24 +1,34 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const langButtons = document.querySelectorAll(".lang-btn");
+// ============================================
+// SISTEMA DE IDIOMAS — VERSÃO MODULAR
+// Funciona em qualquer página, com qualquer
+// elemento marcado como .pt ou .en
+// ============================================
 
-  langButtons.forEach(button => {
-    button.addEventListener("click", () => {
-      const selectedLang = button.getAttribute("data-lang");
+// 1. Ativar PT por defeito ao carregar a página
+document.addEventListener("DOMContentLoaded", () => {
+  ativarIdioma("pt");
+});
 
-      // Esconde tudo
-      document.querySelectorAll(".pt, .en").forEach(el => {
-        el.style.display = "none";
-      });
 
-      // Mostra a língua selecionada
-      document.querySelectorAll("." + selectedLang).forEach(el => {
-        // Se for UL, mantém flex
-        if (el.tagName === "UL") {
-          el.style.display = "flex";
-        } else {
-          el.style.display = "block";
-        }
-      });
-    });
+// 2. Função central de alternância
+function ativarIdioma(lang) {
+
+  // Remover active de tudo
+  document.querySelectorAll('.pt, .en').forEach(el => {
+    el.classList.remove('active');
+  });
+
+  // Ativar apenas o idioma escolhido
+  document.querySelectorAll('.' + lang).forEach(el => {
+    el.classList.add('active');
+  });
+}
+
+
+// 3. Botões de troca de idioma
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const lang = btn.dataset.lang; // "pt" ou "en"
+    ativarIdioma(lang);
   });
 });
