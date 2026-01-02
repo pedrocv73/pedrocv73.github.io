@@ -11,13 +11,26 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  background: url('realpolitik.png') center/cover no-repeat fixed;
+  background: #ffffff; /* fundo limpo — imagem vem do .hero */
   color: #000;
+  overflow-x: hidden;
 }
 
 
 /* ============================
-   1. HERO EXCLUSIVO
+   1. HERO — CONTEÚDO POR CIMA DO FUNDO
+   ============================ */
+
+#conceito-hero,
+.conceito-submenu,
+#conceito-wrapper {
+  position: relative;
+  z-index: 10; /* garante que tudo fica acima da imagem de fundo */
+}
+
+
+/* ============================
+   2. HERO FRASE
    ============================ */
 
 #conceito-hero {
@@ -34,7 +47,7 @@ body {
 
 
 /* ============================
-   2. MINI-MENU EXCLUSIVO
+   3. MINI-MENU EXCLUSIVO
    ============================ */
 
 .conceito-submenu {
@@ -66,7 +79,7 @@ body {
 
 
 /* ============================
-   3. WRAPPER DO CONTEÚDO
+   4. WRAPPER DO CONTEÚDO
    ============================ */
 
 #conceito-wrapper {
@@ -77,7 +90,7 @@ body {
 
 
 /* ============================
-   4. BLOCO DE TEXTO
+   5. BLOCO DE TEXTO
    ============================ */
 
 .conceito-bloco {
@@ -102,7 +115,7 @@ body {
 
 
 /* ============================
-   5. SISTEMA BILINGUE
+   6. SISTEMA BILINGUE
    ============================ */
 
 .en {
