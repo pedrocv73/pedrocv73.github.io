@@ -21,7 +21,7 @@ body {
    1. HIERARQUIA SOBRE O HERO
    ============================ */
 
-#conceito-hero,
+/* Estes elementos ficam acima da imagem hero */
 .conceito-submenu,
 #conceito-wrapper {
   position: relative;
@@ -35,7 +35,6 @@ body {
 
 #conceito-hero {
   text-align: center;
-  margin-top: -2rem;
 }
 
 .conceito-hero-frase h1 {
@@ -54,8 +53,8 @@ body {
 .menu-wrapper {
   display: flex;
   justify-content: center;
-  margin-top: 1.2rem;      /* espaço abaixo da imagem */
-  margin-bottom: 1.2rem;   /* espaço antes da frase editorial */
+  margin-top: -2.2rem;   /* sobe o menu para colar à imagem */
+  margin-bottom: 0.8rem; /* espaço antes da frase editorial */
 }
 
 .conceito-submenu {
@@ -94,8 +93,8 @@ body {
 
 #conceito-wrapper {
   max-width: 900px;
-  margin: 1.5cm auto 3rem auto; /* distância entre frase editorial e início do texto */
-  padding-left: 2vw;            /* aproxima o texto da esquerda */
+  margin: 2rem auto 3rem auto; /* texto sobe, deixa de estar “lá em baixo” */
+  padding-left: 2vw;
   padding-right: 2vw;
 }
 
@@ -111,8 +110,8 @@ body {
   line-height: 1.65;
   font-size: 1.05rem;
   backdrop-filter: blur(4px);
-  max-width: 800px;   /* largura editorial */
-  margin: 0 auto;     /* centraliza dentro do wrapper */
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .conceito-bloco p {
