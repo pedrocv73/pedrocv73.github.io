@@ -1,92 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <title>Crisis Cabinet — Conceito</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crisis Cabinet — Conceito</title>
 
-  <!-- Fonte -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- CSS global -->
+    <link rel="stylesheet" href="estilo.css">
 
- <!-- CSS global -->
-<link rel="stylesheet" href="estilo.css">
+    <!-- CSS exclusivo da página Conceito -->
+    <link rel="stylesheet" href="crisis-conceito.css">
 
-<!-- CSS exclusivo da página Conceito -->
-<link rel="stylesheet" href="crisis-conceito.css">
-
+    <!-- Sistema bilingue -->
+    <script src="idiomas.js"></script>
 </head>
 
 <body>
 
-  <!-- ===== HERO EXCLUSIVO ===== -->
-  <header id="conceito-hero">
-    <div class="conceito-hero-frase pt">
-      <h1>A Realpolitik não se escreve em comunicados.</h1>
+    <!-- HERO COMPORTAMENTO IGUAL À HOMEPAGE -->
+    <div class="hero">
+        <img src="realpolitik.png" class="hero-img" alt="">
     </div>
 
-    <div class="conceito-hero-frase en">
-      <h1>Realpolitik is not written in press releases.</h1>
+    <!-- BOTÕES DE IDIOMA (MESMO ESTILO DA HOMEPAGE) -->
+    <div id="lang-switch">
+        <button class="lang-btn" onclick="mostrarPT()">PT</button>
+        <button class="lang-btn" onclick="mostrarEN()">EN</button>
     </div>
-  </header>
 
-  <!-- ===== MINI-MENU EXCLUSIVO ===== -->
-  <nav class="conceito-submenu">
-    <ul class="pt">
-      <li><a href="crisis-cabinet.html">Crisis Cabinet</a></li>
-      <li><a href="crisis-personagens.html">Personagens</a></li>
-      <li><a href="index.html">Homepage</a></li>
-    </ul>
+    <!-- MINI-MENU EXCLUSIVO DA SECÇÃO -->
+    <nav class="conceito-submenu">
+        <ul class="pt">
+            <li><a href="crisis-cabinet.html">Crisis Cabinet</a></li>
+            <li><a href="crisis-personagens.html">Personagens</a></li>
+            <li><a href="index.html">Homepage</a></li>
+        </ul>
 
-    <ul class="en" style="display:none;">
-      <li><a href="crisis-cabinet.html">Crisis Cabinet</a></li>
-      <li><a href="crisis-personagens.html">Characters</a></li>
-      <li><a href="index.html">Homepage</a></li>
-    </ul>
-  </nav>
+        <ul class="en">
+            <li><a href="crisis-cabinet.html">Crisis Cabinet</a></li>
+            <li><a href="crisis-personagens.html">Characters</a></li>
+            <li><a href="index.html">Homepage</a></li>
+        </ul>
+    </nav>
 
-  <!-- ===== CONTEÚDO PRINCIPAL ===== -->
-  <main id="conceito-wrapper">
+    <!-- HERO FRASE -->
+    <section id="conceito-hero">
+        <div class="conceito-hero-frase pt">
+            <h1>A Realpolitik não se escreve em comunicados.</h1>
+        </div>
 
-    <!-- PT -->
-    <section class="conceito-bloco pt">
-      <h2>Conceito</h2>
-
-      <p>O Crisis Cabinet nasce da necessidade de criar um espaço onde a análise não é reativa, mas estruturada. Um núcleo onde a História, a Realpolitik e a leitura contemporânea se encontram num mesmo eixo interpretativo. Aqui, não procuro comentar o imediato; procuro compreender o que o imediato revela sobre forças mais profundas, padrões recorrentes e tensões que atravessam épocas.</p>
-
-      <p>A minha abordagem parte de um princípio simples: a realidade política não se explica apenas pelo que é dito, mas sobretudo pelo que é feito. A Realpolitik não se escreve em comunicados, escreve‑se em decisões, omissões, alianças e rupturas. O Crisis Cabinet existe para interpretar esse subtexto — aquilo que não é dito, mas que estrutura o que acontece.</p>
-
-      <p>Este espaço funciona como uma sala de situação editorial. Um lugar onde método e intuição se cruzam, onde a análise histórica serve de lente para decifrar o presente, e onde cada fenómeno contemporâneo é lido à luz de padrões que se repetem ao longo do tempo. Não se trata de prever o futuro, mas de compreender o terreno onde o futuro se constrói.</p>
-
-      <p>Enquanto autor, não assumo o papel de comentador nem de cronista. O meu trabalho aqui é o de intérprete: alguém que observa, cruza sinais, identifica tensões e procura o ponto onde diferentes narrativas convergem. A minha função não é simplificar a complexidade, mas torná‑la legível — sem a reduzir a slogans, sem a diluir em ruído.</p>
-
-      <p>O Crisis Cabinet articula‑se com o resto do meu ecossistema editorial como o seu centro analítico. O Lisbon Files fornece profundidade histórica; os ensaios oferecem reflexão; os diagnósticos traduzem análise em leitura aplicada; a newsletter acompanha a atualidade; e o e‑book sintetiza tudo num corpo coerente. Cada peça tem o seu lugar, mas é aqui que o método se afirma.</p>
-
-      <p>O leitor que entra neste espaço pode esperar rigor, densidade e clareza. Não encontrará ruído, nem opinião gratuita, nem dramatização. Encontrará contexto, interpretação e uma leitura fria dos acontecimentos — não para os tornar mais simples, mas para os tornar mais compreensíveis. A análise é o meio; a lucidez é o objetivo.</p>
-
-      <p>O Crisis Cabinet é, no fundo, o meu instrumento de leitura do mundo. Um espaço onde a História ilumina o presente, onde a Realpolitik revela o que está por detrás do discurso, e onde cada fenómeno é tratado como parte de um sistema maior. É aqui que organizo o pensamento, estruturo a análise e construo a minha obra editorial.</p>
-
-      <p>As personagens — Guardiã da Memória, Pragmático, Redactor da Crise e Simulador de Impacto — fazem a ponte entre a análise e o meu pensamento. São elas que explicam as interligações entre o passado e o presente e o seu significado como Realpolitik. O Leitor Invisível, por sua vez, não é uma personagem individual: é a soma de todos os visitantes e, por isso, permanece fora da estrutura narrativa.</p>
+        <div class="conceito-hero-frase en">
+            <h1>Realpolitik is not written in press releases.</h1>
+        </div>
     </section>
 
-    <!-- EN -->
-    <section class="conceito-bloco en">
-      <h2>Concept</h2>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <section id="conceito-wrapper">
 
-      <p>The Crisis Cabinet was created to establish a space where analysis is not reactive but structured. A nucleus where History, Realpolitik and contemporary reading converge along a single interpretative axis. This is not a place for commenting on the immediate; it is a place for understanding what the immediate reveals about deeper forces, recurring patterns and tensions that cut across eras.</p>
+        <div class="conceito-bloco pt">
+            <h2>Conceito</h2>
 
-      <p>My approach begins with a simple premise: political reality is not explained by what is said, but by what is done. Realpolitik is not written in press releases; it is written in decisions, omissions, alliances and ruptures. The Crisis Cabinet exists to interpret that subtext — the layer that is not spoken, yet shapes everything that happens.</p>
+            <p>O Crisis Cabinet nasce da necessidade de criar um espaço onde a análise não é reativa, mas estruturada. Um núcleo onde a História, a Realpolitik e a leitura contemporânea se encontram num mesmo eixo interpretativo. Aqui, não procuro comentar o imediato; procuro compreender o que o imediato revela sobre forças mais profundas, padrões recorrentes e tensões que atravessam épocas.</p>
 
-      <p>This space functions as an editorial situation room. A place where method and intuition intersect, where historical analysis becomes a lens to decode the present, and where each contemporary phenomenon is read through patterns that repeat themselves over time. It is not about predicting the future, but about understanding the terrain on which the future is built.</p>
+            <p>A minha abordagem parte de um princípio simples: a realidade política não se explica apenas pelo que é dito, mas sobretudo pelo que é feito. A Realpolitik não se escreve em comunicados, escreve-se em decisões, omissões, alianças e rupturas. O Crisis Cabinet existe para interpretar esse subtexto — aquilo que não é dito, mas que estrutura o que acontece.</p>
 
-      <p>As an author, I do not assume the role of commentator or chronicler. My work here is that of an interpreter: someone who observes, cross‑references signals, identifies tensions and searches for the point where different narratives converge. My goal is not to simplify complexity, but to make it legible — without reducing it to slogans, without diluting it in noise.</p>
+            <p>Este espaço funciona como uma sala de situação editorial. Um lugar onde método e intuição se cruzam, onde a análise histórica serve de lente para decifrar o presente, e onde o fenómeno contemporâneo é lido à luz de padrões que se repetem ao longo do tempo. Não se trata de prever o futuro, mas de compreender o terreno onde o futuro se constrói.</p>
 
-      <p>The Crisis Cabinet connects with the rest of my editorial ecosystem as its analytical core. The Lisbon Files provides historical depth; the essays offer reflection; the diagnostics translate analysis into applied reading; the newsletter follows current events; and the e‑book synthesizes everything into a coherent body of work. Each piece has its place, but it is here that the method is defined.</p>
+            <p>Enquanto autor, não assumo o papel de comentador nem de cronista. O meu trabalho aqui é o de intérprete: alguém que observa, cruza sinais, identifica tensões e propõe uma leitura dos diferentes arranjos de conveniência. A minha função não é simplificar a complexidade, mas torná-la legível — sem a reduzir a slogans, sem a diluir em ruído.</p>
 
-      <p>Readers entering this space can expect rigour, density and clarity. They will not find noise, gratuitous opinion or dramatization. They will find context, interpretation and a cold reading of events — not to make them simpler, but to make them more comprehensible. Analysis is the method; lucidity is the objective.</p>
+            <p>O Crisis Cabinet é um dos três eixos da minha estratégia editorial como o seu centro analítico. O Lisbon Files fornece profundidade histórica; os ensaios oferecem reflexão; os diagnósticos traduzem análise estruturada aplicada; a newsletter acompanha a atualidade; e o e-book sintetiza tudo isso num sistema coerente de leitura do mundo.</p>
 
-      <p>The characters — the Guardian of Memory, the Pragmatist, the Crisis Editor and the Impact Simulator — form the bridge between analysis and my internal reasoning. They dramatise, translate and explain the connections between past and present, and their meaning in terms of Realpolitik. The Invisible Reader is not an individual character: it is the sum of all visitors, and therefore for that reason remains outside the narrative framework.</p>
+            <p>Este espaço não oferece opinião. Não encontrará aqui frases feitas. Não encontrará ruído, nem opinião gratuita, nem dramatização. Encontrará análise — não para tomar decisões, mas para as tornar mais compreensíveis. A análise não é um fim, é um meio.</p>
+
+            <p>O Crisis Cabinet é, no fundo, o meu instrumento de leitura do mundo. Um espaço onde a História ilumina o presente, onde a Realpolitik revela o subtexto das decisões, e onde o fenómeno contemporâneo é tratado como parte de um sistema maior. É aqui que organizo o pensamento, estruturo a análise e construo a minha obra editorial.</p>
+
+            <p>As personagens — Guardião da Memória, Pragmático, Redactor de Crises e Simulador de Impacto — fazem a ponte entre a análise e o meu pensamento. São elas que explicam as interligações entre o passado e o presente como Realpolitik do Editor Universal, num novo sistema de leitura do mundo.</p>
+        </div>
+
+        <!-- ENGLISH VERSION -->
+        <div class="conceito-bloco en">
+            <h2>Concept</h2>
+
+            <p>The Crisis Cabinet was born from the need to create a space where analysis is not reactive, but structured. A nucleus where History, Realpolitik and contemporary reading meet on the same interpretative axis. Here, I do not seek to comment on the immediate; I seek to understand what the immediate reveals about deeper forces, recurring patterns and tensions that cross eras.</p>
+
+            <p>My approach starts from a simple principle: political reality is not explained only by what is said, but above all by what is done. Realpolitik is not written in press releases; it is written in decisions, omissions, alliances and ruptures. The Crisis Cabinet exists to interpret this subtext — what is not said, but structures what happens.</p>
+
+            <p>This space works as an editorial situation room. A place where method and intuition intersect, where historical analysis serves as a lens to decipher the present, and where contemporary phenomena are read in light of patterns that repeat over time. It is not about predicting the future, but understanding the terrain where the future is built.</p>
+
+            <p>As an author, I do not assume the role of commentator or chronicler. My work here is that of an interpreter: someone who observes, crosses signals, identifies tensions and proposes a reading of different arrangements of convenience. My function is not to simplify complexity, but to make it legible — without reducing it to slogans or diluting it in noise.</p>
+
+            <p>The Crisis Cabinet is one of the three pillars of my editorial strategy as its analytical center. The Lisbon Files provide historical depth; the essays offer reflection; the diagnostics translate structured applied analysis; the newsletter follows current events; and the e-book synthesizes all of this into a coherent system for reading the world.</p>
+
+            <p>This space does not offer opinion. You will not find ready-made phrases here. You will not find noise, gratuitous opinion or dramatization. You will find analysis — not to make decisions, but to make them more understandable. Analysis is not an end, it is a means.</p>
+
+            <p>The Crisis Cabinet is, ultimately, my instrument for reading the world. A space where History illuminates the present, where Realpolitik reveals the subtext of decisions, and where contemporary phenomena are treated as part of a larger system. It is here that I organize thought, structure analysis and build my editorial work.</p>
+
+            <p>The characters — Memory Keeper, Pragmatist, Crisis Writer and Impact Simulator — bridge the gap between analysis and my thinking. They explain the interconnections between past and present as the Realpolitik of the Universal Editor, in a new system for reading the world.</p>
+        </div>
+
     </section>
-
-  </main>
 
 </body>
 </html>
