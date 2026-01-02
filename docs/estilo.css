@@ -161,3 +161,14 @@ body {
   flex-direction: column;
   gap: 2rem;
 }
+/* ============================
+   SISTEMA BILINGUE GLOBAL
+   ============================ */
+
+.pt, .en {
+  display: none;
+}
+
+.pt.active, .en.active {
+  display: block;
+}
