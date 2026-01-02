@@ -157,13 +157,15 @@ body {
 }
 
 /* ============================
-   SISTEMA BILINGUE GLOBAL
+   SISTEMA BILINGUE GLOBAL — CORRIGIDO
    ============================ */
 
-.pt, .en {
+.pt:not(.active),
+.en:not(.active) {
   display: none;
 }
 
-.pt.active, .en.active {
+.pt.active,
+.en.active {
   display: block;
 }
