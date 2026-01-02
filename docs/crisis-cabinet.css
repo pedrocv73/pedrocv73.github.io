@@ -4,7 +4,7 @@
 
 
 /* ============================
-   0. REMOVER SCROLL
+   0. REMOVER SCROLL (DESKTOP)
    ============================ */
 
 body {
@@ -17,23 +17,25 @@ body {
    1. SECÇÃO DAS FRASES
    ============================ */
 
-/* subir mais 4 cm e afastar da margem esquerda */
+/* subir mais 4 cm (total ~200px) */
 #cc-frases {
-  margin-top: -13rem; /* sobe ~200px no total */
+  margin-top: -13rem;
   position: relative;
-  z-index: 1; /* fica abaixo do mini-menu */
+  z-index: 1; /* abaixo do mini-menu */
 }
 
-/* afastar 0,5 cm da margem esquerda e mudar cor para preto */
+/* afastar 0,5 cm da margem esquerda + fundo translúcido */
 #cc-frases .conteudo {
   max-width: 900px;
   margin-left: 0;
   padding: 2rem 2rem 2rem 14px; /* 14px ≈ 0,5 cm */
   text-align: left;
-  color: #000000; /* frases a preto */
+  background: rgba(255, 255, 255, 0.65); /* fundo branco translúcido */
+  border-radius: 4px;
+  color: #000; /* texto a preto */
 }
 
-/* remover o título "Crisis Cabinet" por redundância */
+/* remover título redundante */
 #cc-frases h2 {
   display: none;
 }
@@ -51,14 +53,14 @@ body {
 
 .cc-submenu {
   position: absolute;
-  top: calc(50vh + 128px); /* perfeito como está */
+  top: calc(50vh + 128px); /* desceu 0,5 cm */
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(17, 17, 17, 0.85);
   padding: 0.4rem 1rem;
   border-radius: 4px;
   backdrop-filter: blur(4px);
-  z-index: 100;
+  z-index: 100; /* acima das frases */
 }
 
 .cc-submenu ul {
