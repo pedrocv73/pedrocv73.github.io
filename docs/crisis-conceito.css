@@ -18,14 +18,14 @@ body {
 
 
 /* ============================
-   1. HERO — CONTEÚDO POR CIMA DO FUNDO
+   1. HIERARQUIA SOBRE O HERO
    ============================ */
 
 #conceito-hero,
 .conceito-submenu,
 #conceito-wrapper {
   position: relative;
-  z-index: 10; /* garante que tudo fica acima da imagem de fundo */
+  z-index: 10; /* tudo acima da imagem de fundo */
 }
 
 
@@ -35,7 +35,7 @@ body {
 
 #conceito-hero {
   text-align: center;
-  margin-top: -1rem; /* puxado mais para cima */
+  margin-top: -2rem; /* ainda mais acima */
 }
 
 .conceito-hero-frase h1 {
@@ -51,7 +51,7 @@ body {
    ============================ */
 
 .conceito-submenu {
-  margin-top: 1.5rem; /* ligeiramente mais acima */
+  margin-top: 0.8rem; /* mais próximo da frase */
   text-align: center;
 }
 
@@ -60,21 +60,24 @@ body {
   padding: 0;
   margin: 0;
   display: inline-flex;
-  gap: 0.8rem; /* menus mais juntos */
+  gap: 0.6rem; /* ainda mais juntos */
 }
 
 .conceito-submenu a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 0.95rem;
-  padding: 0.3rem 0.6rem;
-  background: rgba(17, 17, 17, 0.75);
+  font-size: 0.9rem;
+  padding: 0.25rem 0.7rem;
+  background: rgba(17, 17, 17, 0.85);
   border-radius: 4px;
   backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,0.35); /* look de botão */
+  cursor: pointer;
 }
 
 .conceito-submenu a:hover {
   color: #d0d4dc;
+  background: rgba(17, 17, 17, 0.95);
 }
 
 
@@ -84,7 +87,7 @@ body {
 
 #conceito-wrapper {
   max-width: 900px;
-  margin: 0.5rem auto 3rem auto; /* puxado mais para cima */
+  margin: 0 auto 3rem auto; /* ainda mais acima */
   padding: 0 1.5rem;
 }
 
