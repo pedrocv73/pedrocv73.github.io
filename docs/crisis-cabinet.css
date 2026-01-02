@@ -28,11 +28,11 @@ body {
 #cc-frases .conteudo {
   max-width: 900px;
   margin-left: 0;
-  padding: 2rem 2rem 2rem 14px; /* 14px ≈ 0,5 cm */
+  padding: 2rem 2rem 2rem 14px;
   text-align: left;
-  background: rgba(255, 255, 255, 0.65); /* fundo branco translúcido */
+  background: rgba(255, 255, 255, 0.45); /* mais transparente */
   border-radius: 4px;
-  color: #000; /* texto a preto */
+  color: #000;
 }
 
 /* remover título redundante */
