@@ -1,35 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crisis Cabinet — Conceito</title>
-
-    <!-- CSS global -->
-    <link rel="stylesheet" href="estilo.css">
-
-    <!-- CSS exclusivo da página Conceito -->
-    <link rel="stylesheet" href="crisis-conceito.css">
-
-    <!-- Sistema bilingue -->
-    <script src="idiomas.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crisis Cabinet — Pedro Martins</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="crisis-conceito.css">
 </head>
 
 <body>
 
-    <!-- HERO COMPORTAMENTO IGUAL À HOMEPAGE -->
-    <div class="hero">
-        <img src="realpolitik.png" class="hero-img" alt="">
-    </div>
+<header class="hero">
 
-    <!-- BOTÕES DE IDIOMA (MESMO ESTILO DA HOMEPAGE) -->
-    <div id="lang-switch">
-        <button class="lang-btn" onclick="mostrarPT()">PT</button>
-        <button class="lang-btn" onclick="mostrarEN()">EN</button>
-    </div>
+  <!-- IMAGEM HERO -->
+  <img src="realpolitik.png" class="hero-img" alt="Imagem de fundo">
 
-    <!-- MINI-MENU EXCLUSIVO DA SECÇÃO -->
-    <nav class="conceito-submenu">
+  <!-- BOTÕES DE LÍNGUA -->
+  <div id="lang-switch">
+    <button class="lang-btn" data-lang="pt">PT</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+
+  <!-- MINI-MENU INTERNO -->
+  <nav class="conceito-submenu">
     <ul class="pt">
         <li><a href="crisis-cabinet.html">Crisis Cabinet</a></li>
         <li><a href="crisis-personagens.html">Personagens</a></li>
@@ -39,20 +32,20 @@
         <li><a href="crisis-cabinet.html">Crisis Cabinet</a></li>
         <li><a href="crisis-personagens.html">Characters</a></li>
     </ul>
-</nav>
+  </nav>
 
-    <!-- HERO FRASE -->
-    <section id="conceito-hero">
-        <div class="conceito-hero-frase pt">
-            <h1>A Realpolitik não se escreve em comunicados.</h1>
-        </div>
+  <!-- FRASE EDITORIAL -->
+  <div class="frase-editorial pt">
+    A realpolitik não se escreve em comunicados
+  </div>
 
-        <div class="conceito-hero-frase en">
-            <h1>Realpolitik is not written in press releases.</h1>
-        </div>
-    </section>
+  <div class="frase-editorial en">
+    Realpolitik is not written in press releases
+  </div>
 
-    <!-- CONTEÚDO PRINCIPAL -->
+</header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
     <section id="conceito-wrapper">
 
         <div class="conceito-bloco pt">
@@ -95,6 +88,19 @@
         </div>
 
     </section>
+
+</body>
+</html>
+</section>
+
+<!-- COPYRIGHT -->
+<div class="footer-container">
+  <footer class="site-footer">
+    <p>&copy; 2026 Pedro Martins. Todos os direitos reservados.</p>
+  </footer>
+</div>
+
+<script src="idiomas.js"></script>
 
 </body>
 </html>
