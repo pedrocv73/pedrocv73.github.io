@@ -4,6 +4,16 @@
 
 
 /* ============================
+   0. REMOVER SCROLL
+   ============================ */
+
+body {
+  overflow-y: hidden;
+  height: 100vh;
+}
+
+
+/* ============================
    1. SECÇÃO DAS FRASES
    ============================ */
 
@@ -14,12 +24,13 @@
   z-index: 1; /* fica abaixo do mini-menu */
 }
 
-/* afastar 0,5 cm da margem esquerda */
+/* afastar 0,5 cm da margem esquerda e mudar cor para preto */
 #cc-frases .conteudo {
   max-width: 900px;
   margin-left: 0;
   padding: 2rem 2rem 2rem 14px; /* 14px ≈ 0,5 cm */
   text-align: left;
+  color: #000000; /* frases a preto */
 }
 
 /* remover o título "Crisis Cabinet" por redundância */
