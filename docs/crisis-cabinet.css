@@ -4,38 +4,25 @@
 
 
 /* ============================
-   0. REMOVER SCROLL (DESKTOP)
-   ============================ */
-
-body {
-  overflow-y: hidden;
-  height: 100vh;
-}
-
-
-/* ============================
    1. SECÇÃO DAS FRASES
    ============================ */
 
-/* subir mais 4 cm (total ~200px) */
 #cc-frases {
-  margin-top: -13rem;
+  margin-top: 4rem; /* valor seguro e não destrutivo */
   position: relative;
-  z-index: 1; /* abaixo do mini-menu */
+  z-index: 1;
 }
 
-/* afastar 0,5 cm da margem esquerda + fundo translúcido */
 #cc-frases .conteudo {
   max-width: 900px;
-  margin-left: 0;
-  padding: 2rem 2rem 2rem 14px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: left;
-  background: rgba(255, 255, 255, 0.30); /* mais transparente */
+  background: rgba(255, 255, 255, 0.30);
   border-radius: 4px;
   color: #000;
 }
 
-/* remover título redundante */
 #cc-frases h2 {
   display: none;
 }
@@ -52,15 +39,16 @@ body {
    ============================ */
 
 .cc-submenu {
-  position: absolute;
-  top: calc(50vh + 128px); /* desceu 0,5 cm */
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  margin-top: 2rem;
   background-color: rgba(17, 17, 17, 0.85);
   padding: 0.4rem 1rem;
   border-radius: 4px;
   backdrop-filter: blur(4px);
-  z-index: 100; /* acima das frases */
+  z-index: 100;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cc-submenu ul {
@@ -89,11 +77,10 @@ body {
 
 #cc-conceito,
 #cc-personagens {
-  margin-top: 5rem;
+  margin-top: 4rem;
   padding: 2rem;
 }
 
-/* esconder títulos repetidos enquanto não há conteúdo */
 #cc-conceito h3,
 #cc-personagens h3 {
   display: none;
@@ -114,7 +101,4 @@ body {
 /* ============================
    4. BILINGUE
    ============================ */
-
-.en {
-  display: none;
-}
+/* REMOVIDO: .en { display:none; } */
