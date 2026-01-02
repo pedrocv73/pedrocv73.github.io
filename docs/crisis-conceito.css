@@ -82,7 +82,8 @@ body {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem 2rem 2rem 14px;
-  background: rgba(255, 255, 255, 0.35); /* transparência final */
+  #cc-conceito .conteudo {
+  background: rgba(255, 255, 255, 0.35) !important;} /* transparência final */
   border-radius: 4px;
   color: #000;
   line-height: 1.65;
