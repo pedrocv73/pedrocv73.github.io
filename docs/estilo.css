@@ -18,7 +18,7 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  z-index: 0; /* base para camadas internas */
+  z-index: 0;
 }
 
 /* IMAGEM HERO — FUNDO ABSOLUTO */
@@ -30,7 +30,7 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: top center;
-  z-index: 1; /* fica atrás de tudo */
+  z-index: 1;
 }
 
 /* GRADIENTE INFERIOR PARA EVITAR BRANCOS */
@@ -69,10 +69,10 @@ body {
   background: #f0f0f0;
 }
 
-/* MENU PRINCIPAL — CORRIGIDO */
+/* MENU PRINCIPAL */
 .menu-principal {
   position: absolute;
-  top: calc(57vh + 57px); /* desce cerca de 1,5cm */
+  top: calc(57vh + 57px);
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(17, 17, 17, 0.75);
@@ -83,7 +83,6 @@ body {
   width: max-content;
 }
 
-/* Ambas as listas ocupam o mesmo espaço */
 .menu-principal ul {
   list-style: none;
   display: flex;
@@ -93,10 +92,7 @@ body {
   padding: 0;
 }
 
-/* Esconde a versão EN por defeito */
-.menu-principal ul.en {
-  display: none;
-}
+/* REMOVIDO: .menu-principal ul.en { display:none; } */
 
 /* Estilo dos links */
 .menu-principal a {
@@ -110,7 +106,6 @@ body {
   color: #ffffff;
 }
 
-/* Estado ativo */
 .menu-principal a.active {
   color: #aaa;
   pointer-events: none;
@@ -118,9 +113,10 @@ body {
   cursor: default;
 }
 
+/* FRASE EDITORIAL */
 .frase-editorial {
   position: absolute;
-  top: calc(50vh + 38px); /* 57px - 19px = 38px */
+  top: calc(50vh + 38px);
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Merriweather', serif;
@@ -134,12 +130,10 @@ body {
   text-align: center;
   max-width: 90vw;
 }
-/* Esconde a versão inglesa da frase editorial por defeito */
-.frase-editorial.en {
-  display: none;
-}
 
-/* COPYRIGHT — AJUSTADO */
+/* REMOVIDO: .frase-editorial.en { display:none; } */
+
+/* COPYRIGHT */
 .site-footer {
   position: absolute;
   bottom: 12px;
@@ -161,6 +155,7 @@ body {
   flex-direction: column;
   gap: 2rem;
 }
+
 /* ============================
    SISTEMA BILINGUE GLOBAL
    ============================ */
