@@ -35,7 +35,7 @@ body {
 
 #conceito-hero {
   text-align: center;
-  margin-top: 1rem; /* puxado para cima */
+  margin-top: -1rem; /* puxado mais para cima */
 }
 
 .conceito-hero-frase h1 {
@@ -51,7 +51,7 @@ body {
    ============================ */
 
 .conceito-submenu {
-  margin-top: 2rem;
+  margin-top: 1.5rem; /* ligeiramente mais acima */
   text-align: center;
 }
 
@@ -60,7 +60,7 @@ body {
   padding: 0;
   margin: 0;
   display: inline-flex;
-  gap: 1.2rem; /* mais juntos */
+  gap: 0.8rem; /* menus mais juntos */
 }
 
 .conceito-submenu a {
@@ -84,7 +84,7 @@ body {
 
 #conceito-wrapper {
   max-width: 900px;
-  margin: 1.5rem auto 3rem auto; /* puxado para cima */
+  margin: 0.5rem auto 3rem auto; /* puxado mais para cima */
   padding: 0 1.5rem;
 }
 
