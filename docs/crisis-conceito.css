@@ -1,104 +1,110 @@
 /* ============================================
-   CRISIS CABINET — PÁGINA CONCEITO
+   CRISIS CABINET — PÁGINA CONCEITO (MODULAR)
    ============================================ */
 
 
 /* ============================
-   0. REMOVER SCROLL (DESKTOP)
+   0. BASE
    ============================ */
 
 body {
-  overflow-y: hidden;
-  height: 100vh;
   font-family: 'Open Sans', sans-serif;
-}
-
-
-/* ============================
-   1. HERO / FRASE ÂNCORA
-   ============================ */
-
-#cc-hero {
-  position: relative;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-#cc-hero h1 {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #ffffff;
-  text-shadow: 0 0 6px rgba(0,0,0,0.4);
-}
-
-
-/* ============================
-   2. MINI-MENU INTERNO
-   ============================ */
-
-.cc-submenu {
-  position: absolute;
-  top: calc(50vh + 128px);
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(17, 17, 17, 0.85);
-  padding: 0.4rem 1rem;
-  border-radius: 4px;
-  backdrop-filter: blur(4px);
-  z-index: 100;
-}
-
-.cc-submenu ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
   margin: 0;
   padding: 0;
+  background: url('realpolitik.png') center/cover no-repeat fixed;
+  color: #000;
 }
 
-.cc-submenu a {
+
+/* ============================
+   1. HERO EXCLUSIVO
+   ============================ */
+
+#conceito-hero {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.conceito-hero-frase h1 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 0 0 6px rgba(0,0,0,0.45);
+}
+
+
+/* ============================
+   2. MINI-MENU EXCLUSIVO
+   ============================ */
+
+.conceito-submenu {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.conceito-submenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  gap: 2rem;
+}
+
+.conceito-submenu a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
+  padding: 0.3rem 0.6rem;
+  background: rgba(17, 17, 17, 0.75);
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
 }
 
-.cc-submenu a:hover {
+.conceito-submenu a:hover {
   color: #d0d4dc;
 }
 
 
 /* ============================
-   3. SECÇÃO CONCEITO
+   3. WRAPPER DO CONTEÚDO
    ============================ */
 
-#cc-conceito {
-  margin-top: -10rem; /* sobe o bloco para ficar alinhado com o hero */
-  padding: 0 2rem;
-  position: relative;
-  z-index: 1;
-}
-
-#cc-conceito .conteudo {
+#conceito-wrapper {
   max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem 2rem 2rem 14px;
-  background: rgba(255, 255, 255, 0.35) !important; /* transparência final */
-  border-radius: 4px;
-  color: #000;
-  line-height: 1.65;
-  font-size: 1.05rem;
-}
-
-
-#cc-conceito h2 {
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #000;
+  margin: 3rem auto 4rem auto;
+  padding: 0 1.5rem;
 }
 
 
 /* ============================
-   4. PARÁGRAFOS
-   =================
+   4. BLOCO DE TEXTO
+   ============================ */
+
+.conceito-bloco {
+  background: rgba(255, 255, 255, 0.35);
+  padding: 2rem;
+  border-radius: 6px;
+  line-height: 1.65;
+  font-size: 1.05rem;
+  backdrop-filter: blur(4px);
+}
+
+.conceito-bloco h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.conceito-bloco p {
+  margin-bottom: 1.2rem;
+}
+
+
+/* ============================
+   5. SISTEMA BILINGUE
+   ============================ */
+
+.en {
+  display: none;
+}
