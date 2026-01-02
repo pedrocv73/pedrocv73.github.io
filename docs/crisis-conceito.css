@@ -87,9 +87,8 @@ body {
 
 #conceito-wrapper {
   max-width: 900px;
-  margin: 1.5cm auto 3rem auto; /* distância entre frase editorial e início do texto */
-  padding-left: 2vw;  /* aproxima o texto da esquerda */
-  padding-right: 2vw;
+  margin: 0 auto 3rem auto; /* ainda mais acima */
+  padding: 0 1.5rem;
 }
 
 
@@ -104,14 +103,10 @@ body {
   line-height: 1.65;
   font-size: 1.05rem;
   backdrop-filter: blur(4px);
-  max-width: 800px;   /* largura editorial */
-  margin: 0 auto;     /* centraliza dentro do wrapper */
 }
 
 .conceito-bloco p {
   margin-bottom: 1.2rem;
-  text-align: justify; /* justificação */
-  line-height: 1.6;    /* legibilidade */
 }
 
 
