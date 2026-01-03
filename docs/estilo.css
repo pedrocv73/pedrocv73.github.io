@@ -39,7 +39,7 @@ body {
 /* FRASE EDITORIAL */
 .frase-editorial {
   position: absolute;
-  top: calc(50% + 3cm); /* desce 3cm abaixo do centro */
+  top: calc(50% + 5cm); /* desce 5cm abaixo do centro */
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
@@ -60,7 +60,7 @@ body {
   text-align: center;
   background-color: #000;
   padding: 1rem 0;
-  margin-top: 3cm; /* afasta o menu da frase */
+  margin-top: 5cm; /* afasta o menu da frase */
 }
 
 .menu-principal a {
@@ -82,9 +82,9 @@ body {
 /* BOTÕES DE LÍNGUA */
 #lang-switch {
   position: absolute;
-  top: 5vh;
+  top: 2vh;
   right: 2vw;
-  z-index: 20;
+  z-index: 30; /* garantir que está acima da imagem e da frase */
   display: flex;
   gap: 0.5rem;
 }
