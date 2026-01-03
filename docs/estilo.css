@@ -59,7 +59,7 @@
 .frase {
   font-size: 2rem;
   text-align: center;
-  margin-bottom: 15px; /* espaço entre frase e menu */
+  margin-bottom: 5px; /* espaço entre frase e menu */
   z-index: 20;
   position: relative;
   color: #fff; /* melhora legibilidade sobre fundo */
@@ -68,7 +68,7 @@
 
 /* MENU — versão final unificada */
 .menu {
-  margin-top: 5px;                 
+  margin-top: 10px;                 
   background-color: rgba(0, 0, 0, 0.6); 
   padding: 0.7rem 1rem;
   border-radius: 4px;               
