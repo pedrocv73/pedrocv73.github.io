@@ -11,10 +11,10 @@
   <div class="hero">
 
     <!-- IMAGEM DE FUNDO -->
-    <img class="hero-img" src="tua-imagem.jpg" alt="Imagem de fundo">
+    <img class="hero-img" src="realpolitik.png" alt="Imagem de fundo">
 
     <!-- FRASE EDITORIAL -->
-    <div class="frase-editorial pt">
+    <div class="frase-editorial pt active">
       A realpolitik não se escreve em comunicados
     </div>
     <div class="frase-editorial en">
@@ -22,24 +22,22 @@
     </div>
 
     <!-- MENU PRINCIPAL -->
-    <nav class="menu-principal">
-      <ul class="pt">
-        <li><a href="crisis-cabinet.html">Crisis Cabinet</a></li>
-        <li><a href="lisbon-files.html">Lisbon Files</a></li>
-        <li><a href="linhas-de-fratura.html">Linhas de Fratura</a></li>
-        <li><a href="contactos.html">Contactos</a></li>
-        <li><a href="portfolio.html">Portfólio</a></li>
-        <li><a href="quem-sou-eu.html">Quem sou eu</a></li>
-      </ul>
+    <nav class="menu-principal pt active">
+      <a href="crisis-cabinet.html">Crisis Cabinet</a>
+      <a href="lisbon-files.html">Lisbon Files</a>
+      <a href="linhas-de-fratura.html">Linhas de Fratura</a>
+      <a href="contactos.html">Contactos</a>
+      <a href="portfolio.html">Portfólio</a>
+      <a href="quem-sou-eu.html">Quem sou eu</a>
+    </nav>
 
-      <ul class="en">
-        <li><a href="crisis-cabinet.html">Crisis Cabinet</a></li>
-        <li><a href="lisbon-files.html">Lisbon Files</a></li>
-        <li><a href="linhas-de-fratura.html">Fracture Lines</a></li>
-        <li><a href="contactos.html">Contacts</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="quem-sou-eu.html">About me</a></li>
-      </ul>
+    <nav class="menu-principal en">
+      <a href="crisis-cabinet.html">Crisis Cabinet</a>
+      <a href="lisbon-files.html">Lisbon Files</a>
+      <a href="linhas-de-fratura.html">Fracture Lines</a>
+      <a href="contactos.html">Contacts</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="quem-sou-eu.html">About me</a>
     </nav>
 
     <!-- BOTÕES DE LÍNGUA -->
@@ -57,17 +55,16 @@
 
   <script>
     function ativarPT() {
-      document.querySelector('.pt').classList.add('active');
-      document.querySelector('.en').classList.remove('active');
+      document.querySelectorAll('.pt').forEach(el => el.classList.add('active'));
+      document.querySelectorAll('.en').forEach(el => el.classList.remove('active'));
     }
 
     function ativarEN() {
-      document.querySelector('.en').classList.add('active');
-      document.querySelector('.pt').classList.remove('active');
+      document.querySelectorAll('.en').forEach(el => el.classList.add('active'));
+      document.querySelectorAll('.pt').forEach(el => el.classList.remove('active'));
     }
 
-    // Ativação inicial
-    ativarPT();
+    ativarPT(); // idioma inicial
   </script>
 
 </body>
