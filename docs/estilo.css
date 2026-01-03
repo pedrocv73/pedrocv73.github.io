@@ -48,6 +48,7 @@ body {
   backdrop-filter: blur(3px);
   text-align: center;
   max-width: 90vw;
+  margin-top: 3cm; /* desloca a frase para baixo */
   margin-bottom: 2rem;
 }
 
@@ -60,20 +61,22 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   font-family: 'Open Sans', sans-serif;
+  background-color: #000; /* fundo preto */
+  padding: 1rem 0;
 }
 
 .menu-principal a {
   text-decoration: none;
   font-weight: 500;
-  color: #fff;
-  background-color: rgba(40, 30, 20, 0.6);
+  color: #fff; /* letras brancas */
   padding: 0.5rem 1rem;
-  border-radius: 4px;
   transition: background 0.3s ease;
 }
 
 .menu-principal a:hover {
-  background-color: rgba(40, 30, 20, 0.8);
+  background-color: #222;
+}
+
 }
 
 /* BOTÕES DE LÍNGUA */
