@@ -61,7 +61,8 @@
 
 /* MENU PRINCIPAL */
 .menu-principal {
-  top: calc(50% + 4.5cm);
+  position: absolute;
+  left: 50%;
   transform: translateX(-50%);
   z-index: 25;
   text-align: center;
@@ -70,9 +71,8 @@
   white-space: nowrap; /* impede quebra de linha */
 }
 
-.menu-principal {
-  top: calc(50% + 4.5cm);
-}
+.menu-principal a {
+  display: inline-block;
   margin: 0 6px;
   text-decoration: none;
   font-weight: 500;
