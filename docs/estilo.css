@@ -45,7 +45,7 @@
 /* FRASE EDITORIAL */
 .frase-editorial {
   position: absolute;
-  top: calc(50% + 3cm);
+  top: calc(50% + 2.5cm); /* ajuste fino: sobe meio centímetro */
   left: 50%;
   transform: translateX(-50%);
   z-index: 20;
@@ -62,22 +62,22 @@
 /* MENU PRINCIPAL */
 .menu-principal {
   position: absolute;
-  top: calc(50% + 6cm); /* abaixo da frase */
+  top: calc(50% + 4.2cm); /* ligeiramente abaixo da frase */
   left: 50%;
   transform: translateX(-50%);
   z-index: 25;
   text-align: center;
   background-color: #000;
-  padding: 1rem 0;
+  padding: 0.7rem 0; /* ligeiramente mais compacto */
 }
 
 .menu-principal a {
   display: inline-block;
-  margin: 0 12px;
+  margin: 0 8px; /* separadores mais próximos */
   text-decoration: none;
   font-weight: 500;
   color: #fff;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 0.8rem; /* mais elegante */
   transition: background 0.3s ease;
 }
 
