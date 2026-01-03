@@ -1,44 +1,71 @@
-<div class="hero">
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Crisis Cabinet by Pedro Martins</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
 
-  <!-- IMAGEM DE FUNDO -->
+  <div class="hero">
+
+    <!-- IMAGEM DE FUNDO -->
   <img class="hero-img" src="realpolitik.png" alt="Imagem de fundo">
 
-  <!-- BOTÕES DE LÍNGUA -->
-  <div id="lang-switch">
-    <button class="lang-btn" onclick="ativarPT()">PT</button>
-    <button class="lang-btn" onclick="ativarEN()">EN</button>
+    <!-- FRASE EDITORIAL -->
+    <div class="frase-editorial pt active">
+      A realpolitik não se escreve em comunicados
+    </div>
+    <div class="frase-editorial en">
+      Realpolitik is not written in press releases
+    </div>
+
+    <!-- MENU PRINCIPAL -->
+    <nav class="menu-principal pt active">
+      <a href="crisis-cabinet.html">Crisis Cabinet</a>
+      <a href="lisbon-files.html">Lisbon Files</a>
+      <a href="linhas-de-fratura.html">Linhas de Fratura</a>
+      <a href="contactos.html">Contactos</a>
+      <a href="portfolio.html">Portfólio</a>
+      <a href="quem-sou-eu.html">Quem sou eu</a>
+    </nav>
+
+    <nav class="menu-principal en">
+      <a href="crisis-cabinet.html">Crisis Cabinet</a>
+      <a href="lisbon-files.html">Lisbon Files</a>
+      <a href="linhas-de-fratura.html">Fracture Lines</a>
+      <a href="contactos.html">Contacts</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="quem-sou-eu.html">About me</a>
+    </nav>
+
+    <!-- BOTÕES DE LÍNGUA -->
+    <div id="lang-switch">
+      <button class="lang-btn" onclick="ativarPT()">PT</button>
+      <button class="lang-btn" onclick="ativarEN()">EN</button>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="site-footer">
+      © 2026 Pedro Martins. Todos os direitos reservados.
+    </div>
+
   </div>
 
-  <!-- FRASE EDITORIAL -->
-  <div class="frase-editorial pt active">
-    A realpolitik não se escreve em comunicados
-  </div>
-  <div class="frase-editorial en">
-    Realpolitik is not written in press releases
-  </div>
+  <script>
+    function ativarPT() {
+      document.querySelectorAll('.pt').forEach(el => el.classList.add('active'));
+      document.querySelectorAll('.en').forEach(el => el.classList.remove('active'));
+    }
 
-  <!-- MENU PRINCIPAL -->
-  <nav class="menu-principal pt active">
-    <a href="#">Crisis Cabinet</a>
-    <a href="#">Lisbon Files</a>
-    <a href="#">Linhas de Fratura</a>
-    <a href="#">Contactos</a>
-    <a href="#">Portfólio</a>
-    <a href="#">Quem sou eu</a>
-  </nav>
+    function ativarEN() {
+      document.querySelectorAll('.en').forEach(el => el.classList.add('active'));
+      document.querySelectorAll('.pt').forEach(el => el.classList.remove('active'));
+    }
 
-  <nav class="menu-principal en">
-    <a href="#">Crisis Cabinet</a>
-    <a href="#">Lisbon Files</a>
-    <a href="#">Fracture Lines</a>
-    <a href="#">Contacts</a>
-    <a href="#">Portfolio</a>
-    <a href="#">About me</a>
-  </nav>
+    ativarPT(); // idioma inicial
+  </script>
 
-  <!-- COPYRIGHT -->
-  <div class="site-footer">
-    © 2026 Pedro Martins. Todos os direitos reservados.
-  </div>
-
-</div>
+</body>
+</html>
