@@ -39,7 +39,7 @@ body {
 /* FRASE EDITORIAL */
 .frase-editorial {
   position: absolute;
-  top: calc(50% + 3cm); /* desce 3cm abaixo do centro */
+  top: calc(50% - 1.5cm); /* sobe 1.5cm acima do centro */
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
@@ -60,6 +60,7 @@ body {
   text-align: center;
   background-color: #000;
   padding: 1rem 0;
+  margin-top: 2cm; /* afasta o menu da frase */
 }
 
 .menu-principal a {
