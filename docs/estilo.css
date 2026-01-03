@@ -15,7 +15,7 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  padding-top: 350px; /* controla a subida da frase */
+  padding-top: 375px; /* controla a subida da frase */
   z-index: 0;
 }
 
