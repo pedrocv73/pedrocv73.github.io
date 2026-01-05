@@ -122,12 +122,12 @@
 /* BLOCO DE TEXTO SECUNDÁRIO */
 .texto-secundario {
   position: relative;
-  margin-top: 3cm;          /* distância abaixo do menu */
-  margin-left: 40px;        /* alinhamento à esquerda */
-  max-width: 650px;         /* largura confortável para leitura */
+  margin-top: 3cm;
+  margin-left: 40px;
+  max-width: 650px;
   font-size: 1rem;
   line-height: 1.6;
-  color: #ffffff;           /* mantém legibilidade sobre o fundo */
-  text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* subtil, editorial */
-  z-index: 30;              /* acima da imagem, abaixo do menu */
+  color: #ffffff; 
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  z-index: 50; /* garante que fica acima da imagem */
 }
