@@ -16,7 +16,7 @@
   position: relative;
   overflow: hidden;
   padding-top: 415px;         /* mantém posição da frase */
-  padding-bottom: 30px;       /* espaço para o menu respirar */
+  padding-bottom: 15px;       /* espaço para o menu respirar */
 }
 
 /* IMAGEM DE FUNDO */
