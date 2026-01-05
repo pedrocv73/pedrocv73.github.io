@@ -120,9 +120,9 @@
 }
 
 /* BLOCO DE TEXTO SECUNDÁRIO */
-.texto-secundario {
+..texto-secundario {
   position: relative;
-  margin-top: 0px;           /* aparece logo abaixo do hero */
+  margin-top: 3cm;        /* distância exata abaixo do menu */
   margin-left: 40px;
   max-width: 650px;
   font-size: 1rem;
