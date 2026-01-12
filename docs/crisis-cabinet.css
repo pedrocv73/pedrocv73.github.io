@@ -1,12 +1,65 @@
-.botao {
-  background-color: #f2f2f2;
-  color: #7a5c3e;
-  padding: 10px 20px;
-  margin: 10px;
+body {
+  background-color: #7a5c3e;
+  color: #f2f2f2;
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+.topo {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.frase-simples {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.menu {
+  margin-bottom: 20px;
+}
+
+.menu a {
+  color: #f2f2f2;
   text-decoration: none;
+  margin: 0 15px;
   font-weight: bold;
-  border-radius: 4px;
 }
-.botao:hover {
-  background-color: #e0d4c0;
+
+.menu a:hover {
+  text-decoration: underline;
 }
+
+.pdf-links {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.pdf-links a {
+  color: #f2f2f2;
+  text-decoration: none;
+  margin: 0 5px;
+  font-weight: bold;
+}
+
+.pdf-links a:hover {
+  text-decoration: underline;
+}
+
+.site-footer {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 60px;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 10px;
+}
+
+/* se quiseres no futuro voltar a PT/EN alternáveis */
+.pt { display: block; }
+.en { display: none; }
