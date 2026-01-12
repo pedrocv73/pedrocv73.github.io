@@ -1,22 +1,37 @@
-/* ===========================
-   BASE
-=========================== */
-
+/* BASE */
 body {
-  background-color: #704214; /* sépia editorial */
+  background-color: #704214; /* sépia */
   color: #f2f2f2;
   font-family: 'Merriweather', serif;
   margin: 0;
   padding: 0;
 }
 
-/* ===========================
-   HERO
-=========================== */
+/* BOTÕES PT/EN NO CANTO SUPERIOR ESQUERDO */
+.top-buttons {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
 
+.top-buttons a {
+  color: #f2f2f2;
+  background: rgba(255,255,255,0.15);
+  padding: 6px 12px;
+  margin-right: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.top-buttons a:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+/* HERO (igual ao da homepage) */
 .hero {
   text-align: center;
-  padding: 80px 20px 40px;
+  padding: 120px 20px 60px;
 }
 
 .hero h1 {
@@ -29,37 +44,10 @@ body {
   margin-top: 10px;
 }
 
-/* ===========================
-   BOTÕES PT / EN
-=========================== */
-
-.conteudo-links {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.botao {
-  display: inline-block;
-  background: #f2f2f2;
-  color: #7a5c3e;
-  padding: 10px 18px;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 4px;
-}
-
-.botao:hover {
-  background: #e6e6e6;
-}
-
-/* ===========================
-   MICRO-MENU
-=========================== */
-
+/* MICRO-MENU */
 .micro-menu {
   text-align: center;
-  margin: 40px 0 20px;
+  margin: 20px 0 40px;
 }
 
 .micro-menu a {
@@ -73,14 +61,11 @@ body {
   text-decoration: underline;
 }
 
-/* ===========================
-   FOOTER
-=========================== */
-
+/* COPYRIGHT À DIREITA */
 .site-footer {
-  text-align: center;
+  text-align: right;
   font-size: 14px;
-  margin-top: 60px;
-  padding: 20px;
+  padding: 20px 30px;
   border-top: 1px solid #f2f2f2;
+  margin-top: 80px;
 }
