@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="estilo.css">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
   <div class="hero">
@@ -14,34 +15,21 @@
     <img class="hero-img" src="realpolitik.png" alt="Imagem de fundo">
 
     <!-- FRASE EDITORIAL -->
-    <div class="frase pt active">
+    <div class="frase">
       A realpolitik não se escreve em comunicados
     </div>
-    <div class="frase en">
-      Realpolitik is not written in press releases
-    </div>
 
-    <!-- MENU PRINCIPAL PT -->
-    <nav class="menu pt active">
+    <!-- MENU PRINCIPAL -->
+    <nav class="menu">
       <a href="Conceito.html">Conceito</a>
-      <a href="personagens">Personagens</a>
+      <a href="personagens.html">Personagens</a>
       <a href="index.html">Homepage</a>
     </nav>
 
-    <!-- MENU PRINCIPAL EN -->
-    <nav class="menu en">
-      <a href="Concept.html">Concept</a>
-      <a href="Characters">Characters</a>
-      <a href="index.html">Homepage</a>
-    </nav>
-    
-<a href="Crisis%20Cabinet_pt.pdf" target="_blank">PT</a>
-<a href="Crisis%20Cabinet_en.pdf" target="_blank">EN</a>
-
-    <!-- BOTÕES DE LÍNGUA -->
-    <div id="lang-switch">
-      <button class="lang-btn" onclick="ativarPT()">PT</button>
-      <button class="lang-btn" onclick="ativarEN()">EN</button>
+    <!-- BOTÕES PARA PDFs -->
+    <div class="pdf-links">
+      <a href="Crisis%20Cabinet_pt.pdf" target="_blank">PT</a> |
+      <a href="Crisis%20Cabinet_en.pdf" target="_blank">EN</a>
     </div>
 
     <!-- COPYRIGHT -->
@@ -51,19 +39,6 @@
 
   </div>
 
-  <script>
-    function ativarPT() {
-      document.querySelectorAll('.pt').forEach(el => el.classList.add('active'));
-      document.querySelectorAll('.en').forEach(el => el.classList.remove('active'));
-    }
-
-    function ativarEN() {
-      document.querySelectorAll('.en').forEach(el => el.classList.add('active'));
-      document.querySelectorAll('.pt').forEach(el => el.classList.remove('active'));
-    }
-
-    ativarPT(); // idioma inicial
-  </script>
-
 </body>
 </html>
+
