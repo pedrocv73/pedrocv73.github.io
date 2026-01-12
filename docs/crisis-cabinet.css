@@ -1,54 +1,19 @@
 body {
-  background-color: #7a5c3e;
+  background-color: #7a5c3e; /* bronze editorial */
   color: #f2f2f2;
   font-family: 'Georgia', serif;
   margin: 0;
   padding: 40px 20px;
 }
 
-.topo {
-  text-align: center;
-}
-
-h1 {
-  margin-bottom: 10px;
-  font-size: 32px;
-}
-
-.frase-simples {
-  font-size: 18px;
-  font-style: italic;
-  margin-bottom: 30px;
-}
-
-.menu {
-  margin-bottom: 20px;
-}
-
-.menu a {
+.menu a, .pdf-links a {
   color: #f2f2f2;
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0 10px;
   font-weight: bold;
 }
 
-.menu a:hover {
-  text-decoration: underline;
-}
-
-.pdf-links {
-  margin-top: 10px;
-  font-size: 16px;
-}
-
-.pdf-links a {
-  color: #f2f2f2;
-  text-decoration: none;
-  margin: 0 5px;
-  font-weight: bold;
-}
-
-.pdf-links a:hover {
+.menu a:hover, .pdf-links a:hover {
   text-decoration: underline;
 }
 
@@ -59,7 +24,3 @@ h1 {
   border-top: 1px solid #f2f2f2;
   padding-top: 10px;
 }
-
-/* se quiseres no futuro voltar a PT/EN alternáveis */
-.pt { display: block; }
-.en { display: none; }
