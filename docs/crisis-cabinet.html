@@ -2,36 +2,70 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <title>Crisis Cabinet</title>
-  <link rel="stylesheet" href="crisis-cabinet.css">
+  <title>Crisis Cabinet by Pedro Martins</title>
+  <link rel="stylesheet" href="estilo.css">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-  <!-- BOTÕES PT/EN NO CANTO SUPERIOR ESQUERDO -->
-  <div class="top-buttons">
-    <a href="https://docs.google.com/document/d/e/2PACX-1vQLz_VeM9Ff7ZIJTJFR1arNTJ8a1PoBuU1dlH724KqcUCdvpls_kzYPS9hGw0zsLogYxaMhNGnUhTtK/pub" target="_blank">PT</a>
-    <a href="https://docs.google.com/document/d/e/2PACX-1vRHPdtob-lcVOcNyV6laDUklusONhZGpdFG4DhXQ5u_RIncp7TbZ6lUTdSAii8c_RGDWAkrynI7JlNH/pub" target="_blank">EN</a>
+  <div class="hero">
+
+    <!-- IMAGEM DE FUNDO -->
+  <img class="hero-img" src="realpolitik.png" alt="Imagem de fundo">
+
+    <!-- FRASE EDITORIAL -->
+    <div class="frase pt active">
+      A realpolitik não se escreve em comunicados
+    </div>
+    <div class="frase en">
+      Realpolitik is not written in press releases
+    </div>
+
+    <!-- MENU PRINCIPAL -->
+    <nav class="menu pt active">
+      <a href="crisis-cabinet.html">Crisis Cabinet</a>
+      <a href="lisbon-files.html">Lisbon Files</a>
+      <a href="linhas-de-fratura.html">Linhas de Fratura</a>
+      <a href="contactos.html">Contactos</a>
+      <a href="portfolio.html">Portfólio</a>
+      <a href="quem-sou-eu.html">Quem sou eu</a>
+    </nav>
+
+    <nav class="menu en">
+      <a href="crisis-cabinet.html">Crisis Cabinet</a>
+      <a href="lisbon-files.html">Lisbon Files</a>
+      <a href="linhas-de-fratura.html">Linhas de Fratura</a>
+      <a href="contactos.html">Contacts</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="quem-sou-eu.html">About me</a>
+    </nav>
+
+    <!-- BOTÕES DE LÍNGUA -->
+    <div id="lang-switch">
+      <button class="lang-btn" onclick="ativarPT()">PT</button>
+      <button class="lang-btn" onclick="ativarEN()">EN</button>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="site-footer">
+      © 2026 Pedro Martins. Todos os direitos reservados.
+    </div>
+
   </div>
 
-  <!-- HERO IGUAL AO DA HOMEPAGE -->
-  <header class="hero">
-    <h1>Crisis Cabinet</h1>
-    <p class="sub">A realpolitik não se escreve em comunicados</p>
-  </header>
+  <script>
+    function ativarPT() {
+      document.querySelectorAll('.pt').forEach(el => el.classList.add('active'));
+      document.querySelectorAll('.en').forEach(el => el.classList.remove('active'));
+    }
 
-  <!-- MICRO-MENU -->
-  <nav class="micro-menu">
-    <a href="crisis-cabinet.html" class="ativo">Conceito</a>
-    <a href="personagens.html">Personagens</a>
-    <a href="index.html">Homepage</a>
-  </nav>
+    function ativarEN() {
+      document.querySelectorAll('.en').forEach(el => el.classList.add('active'));
+      document.querySelectorAll('.pt').forEach(el => el.classList.remove('active'));
+    }
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    © 2026 Pedro Martins. Todos os direitos reservados.
-  </footer>
+    ativarPT(); // idioma inicial
+  </script>
 
 </body>
 </html>
