@@ -118,3 +118,36 @@
 .en.active {
   display: block;
 }
+
+/* --- RESPONSIVIDADE PARA TELEMÓVEL --- */
+@media (max-width: 600px) {
+
+  /* Reduz o espaço superior para caber no ecrã */
+  .hero {
+    padding-top: 180px;
+  }
+
+  /* Frase mais pequena e com mais respiro */
+  .frase {
+    font-size: 1.3rem;
+    padding: 0 10px;
+  }
+
+  /* Menu quebra linhas automaticamente */
+  .menu {
+    padding: 0.5rem;
+  }
+
+  .menu ul {
+    flex-wrap: wrap;
+    gap: 10px;
+    white-space: normal; /* <-- isto resolve o problema */
+  }
+
+  /* Footer mais discreto no telemóvel */
+  .site-footer {
+    font-size: 0.7rem;
+    right: 10px;
+    bottom: 10px;
+  }
+}
