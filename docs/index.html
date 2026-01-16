@@ -2,6 +2,7 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crisis Cabinet by Pedro Martins</title>
   <link rel="stylesheet" href="estilo.css">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap" rel="stylesheet">
@@ -10,10 +11,8 @@
 
   <div class="hero">
 
-    <!-- IMAGEM DE FUNDO -->
-  <img class="hero-img" src="realpolitik.png" alt="Imagem de fundo">
+    <img class="hero-img" src="realpolitik.png" alt="Imagem de fundo">
 
-    <!-- FRASE EDITORIAL -->
     <div class="frase pt active">
       A realpolitik não se escreve em comunicados
     </div>
@@ -21,7 +20,6 @@
       Realpolitik is not written in press releases
     </div>
 
-    <!-- MENU PRINCIPAL -->
     <nav class="menu pt active">
       <a href="crisis-cabinet-pt.html">Crisis Cabinet</a>
       <a href="lisbon-files.html">Lisbon Files</a>
@@ -40,13 +38,11 @@
       <a href="about-me.html">About me</a>
     </nav>
 
-    <!-- BOTÕES DE LÍNGUA -->
     <div id="lang-switch">
       <button class="lang-btn" onclick="ativarPT()">PT</button>
       <button class="lang-btn" onclick="ativarEN()">EN</button>
     </div>
 
-    <!-- COPYRIGHT -->
     <div class="site-footer">
       © 2026 Pedro Martins. Todos os direitos reservados.
     </div>
@@ -64,8 +60,9 @@
       document.querySelectorAll('.pt').forEach(el => el.classList.remove('active'));
     }
 
-    ativarPT(); // idioma inicial
+    ativarPT();
   </script>
 
 </body>
 </html>
+
