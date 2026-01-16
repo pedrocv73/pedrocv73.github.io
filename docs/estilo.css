@@ -151,3 +151,46 @@
     bottom: 10px;
   }
 }
+
+/* --- AJUSTES PARA TELEMÓVEL --- */
+@media (max-width: 600px) {
+
+  /* Reduz o espaço superior para caber no ecrã */
+  .hero {
+    padding-top: 160px; /* antes 415px */
+  }
+
+  /* Frase mais pequena e com mais espaço */
+  .frase {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  /* Menu com mais respiro e quebra automática */
+  .menu {
+    margin-top: 10px;
+    padding: 0.6rem;
+  }
+
+  .menu ul {
+    flex-wrap: wrap;
+    white-space: normal;
+    gap: 12px;
+  }
+}
+
+/* --- AJUSTE PARA TELEMÓVEL EM HORIZONTAL --- */
+@media (max-height: 500px) {
+
+  .hero {
+    padding-top: 80px; /* ainda menos espaço */
+  }
+
+  .frase {
+    font-size: 1.1rem;
+  }
+
+  .menu {
+    padding: 0.4rem;
+  }
+}
