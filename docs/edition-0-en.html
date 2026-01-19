@@ -7,6 +7,29 @@
 
 <body>
 
+<!-- ARCHIVE MENU -->
+<label for="year">Archive:</label>
+<select id="year">
+    <option value="">Select year</option>
+    <option value="2025">2025</option>
+</select>
+
+<label for="edition">Edition:</label>
+<select id="edition" onchange="openArchive(this.value)">
+    <option value="">Select edition</option>
+    <option value="edition-0-en.html" selected>Edition 0 — Europe in DEFCON 3</option>
+</select>
+
+<script>
+function openArchive(url) {
+    if (url) {
+        window.location.href = url;
+    }
+}
+</script>
+
+<hr>
+
 <h1>Edition 0 — Europe in DEFCON 3, France in Cobra Mode</h1>
 <p><strong>Date:</strong> 21 October 2025</p>
 
