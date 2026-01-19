@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Arquivo — Linhas de Fratura</title>
+</head>
+
+<body>
+
+<h1>Arquivo</h1>
+<p>Selecione o ano e a edição para consultar os resumos.</p>
+
+<!-- MENU ARQUIVO -->
+<label for="ano">Ano:</label>
+<select id="ano">
+    <option value="">Selecionar ano</option>
+    <option value="2025">2025</option>
+</select>
+
+<label for="edicao">Edição:</label>
+<select id="edicao" onchange="abrirArquivo(this.value)">
+    <option value="">Selecionar edição</option>
+    <option value="edicao-0-pt.html">Edição 0 — Europa em DEFCON 3</option>
+</select>
+
+<script>
+function abrirArquivo(url) {
+    if (url) {
+        window.location.href = url;
+    }
+}
+</script>
+
+</body>
+</html>
