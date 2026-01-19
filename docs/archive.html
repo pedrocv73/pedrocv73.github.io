@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Archive — Fracture Lines</title>
+</head>
+
+<body>
+
+<h1>Archive</h1>
+<p>Select the year and edition to access the summaries.</p>
+
+<!-- ARCHIVE MENU -->
+<label for="year">Year:</label>
+<select id="year">
+    <option value="">Select year</option>
+    <option value="2025">2025</option>
+</select>
+
+<label for="edition">Edition:</label>
+<select id="edition" onchange="openArchive(this.value)">
+    <option value="">Select edition</option>
+    <option value="edition-0-en.html">Edition 0 — Europe in DEFCON 3</option>
+</select>
+
+<script>
+function openArchive(url) {
+    if (url) {
+        window.location.href = url;
+    }
+}
+</script>
+
+</body>
+</html>
