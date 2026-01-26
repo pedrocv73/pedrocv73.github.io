@@ -6,56 +6,44 @@
 </head>
 
 <body>
+
+<!-- HOME BUTTON -->
 <p><a href="index.html" style="font-weight:bold;">← Home</a></p>
 
-<h1>Archive</h1>
-<p>Select the year and edition to access the summaries.</p>
+<h1>Archive — Fracture Lines</h1>
+<p>Select a year to navigate.</p>
 
-<!-- ARCHIVE MENU -->
-<label for="year">Year:</label>
-<select id="year">
-    <option value="">Select year</option>
-    <option value="2025">2025</option>
-    <option value="2026">2026</option>
-</select>
+<!-- YEAR INDEX -->
+<ul>
+    <li><a href="#2026">2026</a></li>
+    <li><a href="#2025">2025</a></li>
+    <li><a href="#0">Edition 0</a></li>
+</ul>
 
-<label for="edition">Edition:</label>
-<select id="edition" onchange="openArchive(this.value)">
-    <option value="">Select edition</option>
+<hr>
 
-    <!-- EDITION 0 -->
-    <option value="edition-0-en.html">Edition 0 — Europe in DEFCON 3</option>
+<!-- YEAR 2026 -->
+<h2 id="2026">2026</h2>
+<ul>
+    <li><a href="newsletter-1-2026.html">Newsletter 1/2026 — Democracy is not exportable.</a></li>
+    <li><a href="newsletter-2-2026.html">Newsletter 2/2026 — Democracy, culture and realpolitik: why certain models don't take off.</a></li>
+    <li><a href="newsletter-3-2026.html">Newsletter 3/2026 — Belém as a Trap: Realpolitik, Territory, and the First Round</a></li>
+</ul>
 
-    <!-- NEWSLETTER 1/2025 -->
-    <option value="newsletter-1-2025.html">Newsletter 1/2025 — Rhetoric as a Fault Line</option>
-    
-    <!-- NEWSLETTER 2/2025 -->
-    <option value="newsletter-2-2025.html">Newsletter 2/2025 — Decolonization as a Fault Line</option>
+<!-- YEAR 2025 -->
+<h2 id="2025">2025</h2>
+<ul>
+    <li><a href="newsletter-1-2025.html">Newsletter 1/2025 — Rhetoric as a Fault Line</a></li>
+    <li><a href="newsletter-2-2025.html">Newsletter 2/2025 — Decolonization as a Fault Line</a></li>
+    <li><a href="newsletter-3-2025.html">Newsletter 3/2025 — Camarate, 45 years later, Interruption as a Crisis Device</a></li>
+    <li><a href="newsletter-4-2025.html">Newsletter 4/2025 — Belém as a Trap: Realpolitik and the Invisible Territory</a></li>
+</ul>
 
-    <!-- NEWSLETTER 3/2025 -->
-    <option value="newsletter-3-2025.html">Newsletter 3/2025 — Camarate, 45 years later, Interruption as a Crisis Device</option>
-
-    <!-- NEWSLETTER 4/2025 -->
-    <option value="newsletter-4-2025.html">Newsletter 4/2025 — Belém as a Trap: Realpolitik and the Invisible Territory</option>
-
-    <!-- NEWSLETTER 1/2026 -->
-    <option value="newsletter-1-2026.html">Newsletter 1/2026 — Democracy is not exportable.</option>
-
-    <!-- NEWSLETTER 2/2026 -->
-    <option value="newsletter-2-2026.html">Newsletter 2/2026 — Democracy, culture and realpolitik: why certain models don't take off.</option>
-
-    <!-- NEWSLETTER 3/2026 -->
-    <option value="newsletter-3-2026.html">Newsletter 3/2026 — Belém as a Trap: Realpolitik, Territory, and the First Round</option>
-    
-</select>
-
-<script>
-function openArchive(url) {
-    if (url) {
-        window.location.href = url;
-    }
-}
-</script>
+<!-- EDITION 0 -->
+<h2 id="0">Edition 0</h2>
+<ul>
+    <li><a href="edition-0-en.html">Edition 0 — Europe in DEFCON 3</a></li>
+</ul>
 
 </body>
 </html>
