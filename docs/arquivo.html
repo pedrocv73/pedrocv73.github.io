@@ -10,54 +10,40 @@
 <!-- BOTÃO HOME -->
 <p><a href="index.html" style="font-weight:bold;">← Home</a></p>
 
-<h1>Arquivo</h1>
-<p>Selecione o ano e a edição para consultar os resumos.</p>
+<h1>Arquivo — Linhas de Fratura</h1>
+<p>Selecione o ano para navegar.</p>
 
-<!-- MENU ARQUIVO -->
-<label for="ano">Ano:</label>
-<select id="ano">
-    <option value="">Selecionar ano</option>
-    <option value="2025">2025</option>
-    <option value="2026">2026</option>
-</select>
+<!-- ÍNDICE POR ANO -->
+<ul>
+    <li><a href="#2026">2026</a></li>
+    <li><a href="#2025">2025</a></li>
+    <li><a href="#0">Edição 0</a></li>
+</ul>
 
-<label for="edicao">Edição:</label>
-<select id="edicao" onchange="abrirArquivo(this.value)">
-    <option value="">Selecionar edição</option>
+<hr>
 
-    <!-- EDIÇÃO 0 -->
-    <option value="edicao-0-pt.html">Edição 0 — Europa em DEFCON 3</option>
+<!-- ANO 2026 -->
+<h2 id="2026">2026</h2>
+<ul>
+    <li><a href="newsletter-1-2026-pt.html">Newsletter 1/2026 — A democracia não é exportável</a></li>
+    <li><a href="newsletter-2-2026-pt.html">Newsletter 2/2026 — Democracia, cultura e realpolitik: porque certos modelos não viajam</a></li>
+    <li><a href="newsletter-3-2026-pt.html">Newsletter 3/2026 — Belém como Armadilha: Realpolitik, Território e a Primeira Volta</a></li>
+</ul>
 
-    <!-- EDIÇÃO 1/2025 — NOVA -->
-    <option value="newsletter-1-2025-pt.html">Newsletter 1/2025 — A Retórica como Fratura</option>
-    
-    <!-- EDIÇÃO 2/2025 — NOVA -->
-    <option value="newsletter-2-2025-pt.html">Newsletter 2/2025 — A Descolonização como Fratura</option>
+<!-- ANO 2025 -->
+<h2 id="2025">2025</h2>
+<ul>
+    <li><a href="newsletter-1-2025-pt.html">Newsletter 1/2025 — A Retórica como Fratura</a></li>
+    <li><a href="newsletter-2-2025-pt.html">Newsletter 2/2025 — A Descolonização como Fratura</a></li>
+    <li><a href="newsletter-3-2025-pt.html">Newsletter 3/2025 — Camarate, 45 anos depois, Interrupção como Dispositivo de Crise</a></li>
+    <li><a href="newsletter-4-2025-pt.html">Newsletter 4/2025 — Belém como Armadilha: Realpolitik e o Território Invisível</a></li>
+</ul>
 
-    <!-- EDIÇÃO 3/2025 — NOVA -->
-    <option value="newsletter-3-2025-pt.html">Newsletter 3/2025 — Camarate, 45 anos depois, Interrupção como Dispositivo de Crise</option>
-
-    <!-- EDIÇÃO 4/2025 — NOVA -->
-    <option value="newsletter-4-2025-pt.html">Newsletter 4/2025 — Belém como Armadilha: Realpolitik e o Território Invisível</option>
-
-    <!-- EDIÇÃO 1/2026 — NOVA -->
-    <option value="newsletter-1-2026-pt.html">Newsletter 1/2026 — A democracia não é exportável</option>
-
-    <!-- EDIÇÃO 2/2026 — NOVA -->
-    <option value="newsletter-2-2026-pt.html">Newsletter 2/2026 — Democracia, cultura e realpolitik: porque certos modelos não viajam</option>
-
-    <!-- EDIÇÃO 3/2026 — NOVA -->
-    <option value="newsletter-3-2026-pt.html">Newsletter 3/2026 — Belém como Armadilha: Realpolitik, Território e a Primeira Volta</option>
-
-</select>
-
-<script>
-function abrirArquivo(url) {
-    if (url) {
-        window.location.href = url;
-    }
-}
-</script>
+<!-- EDIÇÃO 0 -->
+<h2 id="0">Edição 0</h2>
+<ul>
+    <li><a href="edicao-0-pt.html">Edição 0 — Europa em DEFCON 3</a></li>
+</ul>
 
 </body>
 </html>
